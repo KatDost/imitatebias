@@ -14,8 +14,8 @@ def generateData(num_instances, num_clusters, num_dims, return_params=False, see
     diagonal entries and LL^T = M). That is, we generate lower-diagonal matrices m
     with positive diagonal and obtain the covariance matrices as Cov = mm^T.
     
-    Parameters:
-    
+    Parameters
+    ----------
     num_instances : int (> 0)
         The size of the generated dataset.
     num_clusters : int (> 0)
@@ -34,24 +34,24 @@ def generateData(num_instances, num_clusters, num_dims, return_params=False, see
         Controls the range in which the means of the Gaussians are generated (upper
         boundary).
     
-    Returns:
-    
+    Returns
+    -------
     np.ndarray (2D)
         Generated data points.
     np.array (1D)
         Corresponding class / cluster labels. 
     
-    Examples:
-    
-    from imitatebias.generators import *
-    import matplotlib.pyplot as plt
+    Examples
+    --------
+    >>> from imitatebias.generators import *
+    >>> import matplotlib.pyplot as plt
 
-    # Generate a dataset.
-    X, y = generateData(1000, 2, 2, seed=2210)
+    Generate a dataset.
+    >>> X, y = generateData(1000, 2, 2, seed=2210)
 
-    # Plot the dataset.
-    plt.scatter(X[:,0], X[:,1], c=y)
-    plt.show()
+    Plot the dataset.
+    >>> plt.scatter(X[:,0], X[:,1], c=y)
+    >>> plt.show()
     """
     rng = np.random.default_rng(seed)
     points = np.empty((0,num_dims))
@@ -88,8 +88,8 @@ def generateBias(data, labels, num_biasedClusters, prob=0.05, seed=None):
     many) above the hyperplane are removed. This bias generation strategy has been 
     described in our paper [1].
     
-    Parameters:
-    
+    Parameters
+    ----------
     data : np.ndarray (2D)
         The dataset to be biased artificially. 
     labels : np.array (1D)
@@ -102,37 +102,39 @@ def generateBias(data, labels, num_biasedClusters, prob=0.05, seed=None):
     seed : int, optional
         The random seed for reproducible generation of the bias.
     
-    Returns:
-    
+    Returns
+    -------
     np.ndarray (2D)
         The biased dataset.
     np.array (1D)
         The corresponding labels.
     np.array (1D)
         The list of indices of points in the original dataset that have been removed.
-        
-    Examples:
-    
-    from imitatebias.generators import *
-    import matplotlib.pyplot as plt
 
-    # Generate a dataset.
-    X, y = generateData(1000, 2, 2, seed=2210)
-
-    # Generate a biased dataset.
-    X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)
-
-    # Plot the biased dataset.
-    plt.scatter(X_b[:,0], X_b[:,1], c=y_b)
-    # Plot the removed points.
-    plt.scatter(X[idcs_deleted,0], X[idcs_deleted,1], c='red', label='deleted points')
-    plt.legend()
-    plt.show()
-    
+    References
+    ----------
     .. [1] Katharina Dost, Katerina Taskova, Patricia Riddle, and Jörg Wicker. 
-           "Your Best Guess When You Know Nothing: Identification and Mitigation of 
-           Selection Bias." In: 2020 IEEE International Conference on Data Mining (ICDM), 
-           pp. 996-1001, IEEE, 2020, ISSN: 2374-8486.
+       "Your Best Guess When You Know Nothing: Identification and Mitigation of 
+       Selection Bias." In: 2020 IEEE International Conference on Data Mining (ICDM), 
+       pp. 996-1001, IEEE, 2020, ISSN: 2374-8486.
+        
+    Examples
+    --------
+    >>> from imitatebias.generators import *
+    >>> import matplotlib.pyplot as plt
+
+    Generate a dataset.
+    >>> X, y = generateData(1000, 2, 2, seed=2210)
+
+    Generate a biased dataset.
+    >>> X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)
+
+    Plot the biased dataset.
+    >>> plt.scatter(X_b[:,0], X_b[:,1], c=y_b)
+    Plot the removed points.
+    >>> plt.scatter(X[idcs_deleted,0], X[idcs_deleted,1], c='red', label='deleted points')
+    >>> plt.legend()
+    >>> plt.show()
     """
     rng = np.random.default_rng(seed)
     delete_this = []

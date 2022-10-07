@@ -544,8 +544,8 @@ class Mimic:
     datasets and provide solutions for a substantially wider set of problems.   
     See our paper [2]_ for details.
     
-    Attributes:
-    
+    Attributes
+    ----------
     params : dict(int: numpy.ndarray (2D))
         A label-indexed dictionary containing (mean, cov) tuples for each identified
         cluster belonging to this label.
@@ -553,58 +553,62 @@ class Mimic:
         The dataset Mimic is fitted to.
     labels : numpy.array (1D)
         The corresponding labels. Labels need to be integer values.
-    
-    Methods:
-    
+
+    Methods
+    -------
     fit(data, labels=[], centers=None)
         Fits the Mimic Gaussians to a dataset.
     predict_cluster(which_class)
         Predicts clusters for the input dataset.
     augment()
         Augments the fitted dataset to mitigate its bias.
-        
-    Examples:
-    
-    from imitatebias.generators import *
-    from imitatebias.mimic import *
 
-    # Generate a dataset.
-    X, y = generateData(1000, 2, 2, seed=2210)
-
-    # Generate a biased dataset.
-    X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)
-
-    # initialize Mimic
-    mim = Mimic()
-
-    # fit to the biased dataset
-    mim.fit(X_b, labels=y_b)
-
-    # predict cluster assignment for class 0
-    predicted_clusters = mim.predict_cluster(0)
-
-    # plot the resulting clusters for class 0
-    plt.scatter(X_b[y_b == 0, 0], X_b[y_b == 0, 1], c=predicted_clusters)
-    plt.show()
-
-    # augment the data
-    gen_p, gen_l = mim.augment()
-
-    # plot the result
-    plt.scatter(X_b[:,0], X_b[:,1], label='dataset')
-    plt.scatter(gen_p[:,0], gen_p[:,1], label='generated points')
-    plt.legend()
-    plt.show()
-        
+    References
+    ----------
     .. [1] Katharina Dost, Katerina Taskova, Patricia Riddle, and Jörg Wicker. 
        "Your Best Guess When You Know Nothing: Identification and Mitigation of 
        Selection Bias." In: 2020 IEEE International Conference on Data Mining (ICDM), 
        pp. 996-1001, IEEE, 2020, ISSN: 2374-8486.
+
     .. [2] Katharina Dost, Hamish Duncanson, Ioannis Ziogas, Patricia Riddle, and Jörg
        Wicker. "Divide and Imitate: Multi-Cluster Identification and Mitigation of 
        Selection Bias." In: Advances in Knowledge Discovery and Data Mining - 26th 
        Pacific-Asia Conference, PAKDD 2022. Lecture Notes in Computer Science, vol. 
        13281, pp. 149-160. Springer, Cham (2022).
+
+    Examples
+    --------
+    >>> from imitatebias.generators import *
+    >>> from imitatebias.mimic import *
+
+    Generate a dataset.
+    >>> X, y = generateData(1000, 2, 2, seed=2210)
+
+    Generate a biased dataset.
+    >>> X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)
+
+    initialize Mimic
+    >>> mim = Mimic()
+
+    fit to the biased dataset
+    >>> mim.fit(X_b, labels=y_b)
+
+    predict cluster assignment for class 0
+    >>> predicted_clusters = mim.predict_cluster(0)
+
+    plot the resulting clusters for class 0
+    >>> plt.scatter(X_b[y_b == 0, 0], X_b[y_b == 0, 1], c=predicted_clusters)
+    >>> plt.show()
+
+    augment the data
+    >>> gen_p, gen_l = mim.augment()
+
+    plot the result
+    >>> plt.scatter(X_b[:,0], X_b[:,1], label='dataset')
+    >>> plt.scatter(gen_p[:,0], gen_p[:,1], label='generated points')
+    >>> plt.legend()
+    >>> plt.show()
+
     """
     
     def __init__(self):
@@ -619,8 +623,8 @@ class Mimic:
         dataset into potentially biased overlapping clusters. We only recommend Mimic
         if the user is certain that the dataset contains multiple clusters. 
         
-        Parameters:
-        
+        Parameters
+        ----------
         data : numpy.ndarray (2D)
             The input dataset.
         labels : numpy.array (1D), optional
@@ -629,29 +633,34 @@ class Mimic:
             A list [C1, ..., Cn] of n initial d-dimensional cluster centers 
             Ci = [Ci_0, ..., Ci_d]. If those centers are not provided, the clustering will
             be initialized with KMeans for the K that optimizes the Silhouette score.
-            
-        Examples:
-        
-        from imitatebias.generators import *
-        from imitatebias.mimic import *
 
-        # Generate a dataset.
-        X, y = generateData(1000, 2, 2, seed=2210)
-
-        # Generate a biased dataset.
-        X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)
-
-        # initialize Mimic
-        mim = Mimic()
-
-        # fit to the biased dataset
-        mim.fit(X_b, labels=y_b)
-        
-        .. [1] Katharina Dost, Hamish Duncanson, Ioannis Ziogas, Patricia Riddle, and Jörg
+	References
+	----------
+	.. [1] Katharina Dost, Hamish Duncanson, Ioannis Ziogas, Patricia Riddle, and Jörg
            Wicker. "Divide and Imitate: Multi-Cluster Identification and Mitigation of 
            Selection Bias." In: Advances in Knowledge Discovery and Data Mining - 26th 
            Pacific-Asia Conference, PAKDD 2022. Lecture Notes in Computer Science, vol. 
            13281, pp. 149-160. Springer, Cham (2022).
+            
+        Examples
+        --------
+        >>> from imitatebias.generators import *
+        >>> from imitatebias.mimic import *
+
+        Generate a dataset.
+        >>> X, y = generateData(1000, 2, 2, seed=2210)
+
+        Generate a biased dataset.
+        >>> X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)
+
+        initialize Mimic
+        >>> mim = Mimic()
+
+        fit to the biased dataset
+        >>> mim.fit(X_b, labels=y_b)
+
+
+
         """
         self.data = data
         self.labels = np.zeros(len(data)).astype(int) if len(labels) == 0 else labels
@@ -674,41 +683,44 @@ class Mimic:
         Assigns clusters to the input data belonging to a specified class. Those clusters
         are selected based on the maximum probability that a point belongs to each of the 
         clusters.
-        
-        Parameters:
-        
+
+        Parameters
+        ----------
         which_class : int
             Filters the data based on the initial labels.
-            
-        Returns:
-        
+
+        Returns
+        -------
         numpy.array (1D)
             The array containing the assigned clusters.
-        
-        Examples:
-        
-        from imitatebias.generators import *
-        from imitatebias.mimic import *
-        import matplotlib.pyplot as plt
 
-        # Generate a dataset.
-        X, y = generateData(1000, 2, 2, seed=2210)
+        Examples
+        --------
+        >>> from imitatebias.generators import *
+        >>> from imitatebias.mimic import *
+        >>> import matplotlib.pyplot as plt
 
-        # Generate a biased dataset.
-        X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)
+        Generate a dataset.
+        >>> X, y = generateData(1000, 2, 2, seed=2210)
 
-        # initialize Mimic
-        mim = Mimic()
+        Generate a biased dataset.
+        >>> X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)
 
-        # fit to the biased dataset
-        mim.fit(X_b, labels=y_b)
+        initialize Mimic
+        >>> mim = Mimic()
+
+        fit to the biased dataset
+        >>> mim.fit(X_b, labels=y_b)
         
-        # predict cluster assignment for class 0
-        predicted_clusters = mim.predict_cluster(0)
+        predict cluster assignment for class 0
+        >>> predicted_clusters = mim.predict_cluster(0)
         
-        # plot the resulting clusters for class 0
-        plt.scatter(X_b[y_b == 0, 0], X_b[y_b == 0, 1], c=predicted_clusters)
-        plt.show()
+        plot the resulting clusters for class 0
+        >>> plt.scatter(X_b[y_b == 0, 0], X_b[y_b == 0, 1], c=predicted_clusters)
+        >>> plt.show()
+
+
+
         """
         l = which_class
         probs = np.column_stack([multivariate_normal(self.params[l][i][0], self.params[l][i][1]).pdf(
@@ -720,40 +732,43 @@ class Mimic:
         
         Generates points to fill in the gap between fitted and observed distributions
         in the input dataset.
-        
-        Returns:
-        
+
+        Returns
+        -------
         numpy.ndarray (2D)
             Generated points.
         numpy.array (1D)
             Corresponding class labels.
-        
-        Examples:
-        
-        from imitatebias.generators import *
-        from imitatebias.mimic import *
-        import matplotlib.pyplot as plt
 
-        # Generate a dataset.
-        X, y = generateData(1000, 2, 2, seed=2210)
+        Examples
+        --------
+        >>> from imitatebias.generators import *
+        >>> from imitatebias.mimic import *
+        >>> import matplotlib.pyplot as plt
 
-        # Generate a biased dataset.
-        X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)
+        Generate a dataset.
+        >>> X, y = generateData(1000, 2, 2, seed=2210)
 
-        # initialize Mimic
-        mim = Mimic()
+        Generate a biased dataset.
+        >>> X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)
 
-        # fit to the biased dataset
-        mim.fit(X_b, labels=y_b)
+        initialize Mimic
+        >>> mim = Mimic()
 
-        # augment the data
-        gen_p, gen_l = mim.augment()
+        fit to the biased dataset
+        >>> mim.fit(X_b, labels=y_b)
 
-        # plot the result
-        plt.scatter(X_b[:,0], X_b[:,1], label='dataset')
-        plt.scatter(gen_p[:,0], gen_p[:,1], label='generated points')
-        plt.legend()
-        plt.show()
+        augment the data
+        >>> gen_p, gen_l = mim.augment()
+
+        plot the result
+        >>> plt.scatter(X_b[:,0], X_b[:,1], label='dataset')
+        >>> plt.scatter(gen_p[:,0], gen_p[:,1], label='generated points')
+        >>> plt.legend()
+        >>> plt.show()
+
+
+
         """
         gen_points = np.empty((0, len(self.data[0])))
         gen_labels = []

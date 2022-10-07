@@ -195,8 +195,8 @@ class Imitate:
     
     See our paper [1]_ for details.
     
-    Attributes:
-    
+    Attributes
+    ----------
     icas : list(sklearn.decomposition.FastICA) 
         A list of `FastICA` objects trained per label in the training set.
     grids : dict(string or int or float: numpy.ndarray (2D))
@@ -212,73 +212,75 @@ class Imitate:
         The necessary number of points to add to mitigate the bias; per label and 
         dimension.
     
-    Methods:
-    
+    Methods
+    -------
     fit(data, labels=[], bounds={}, strength=1000)
         Fits the Imitate Gaussians to a dataset.
     score(data)
         Scores new data based on Imitate'd fitted Gaussians.
     augment()
         Augments the fitted dataset to mitigate its bias.
-        
-    Examples:
-    
-    from imitatebias.generators import *
-    from imitatebias.imitate import *
-    import matplotlib.pyplot as plt
 
-    # Generate a dataset.
-    X, y = generateData(1000, 2, 2, seed=2210)
-
-    # Generate a biased dataset.
-    X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)
-
-    # initialize Imitate
-    imi = Imitate()
-
-    # fit Imitate to the biased dataset
-    imi.fit(X_b, labels=y_b)
-
-    # visualize data per cluster in ICA space
-    for l in np.unique(y_b):
-        data_transformed = imi.icas[l].transform(X_b[y_b == l])
-        plt.scatter(data_transformed[:,0], data_transformed[:,1])
-        plt.title('Class '+str(l))
-        plt.show()
-
-    # create some random points to score
-    rnd_points = np.column_stack((np.random.uniform(min(X[:,0]), max(X[:,0]), size=1000), \
-                                  np.random.uniform(min(X[:,1]), max(X[:,1]), size=1000)))
-
-    # score the random points
-    scores_fill = imi.score(rnd_points, score_type='fill')
-    scores_balanced = imi.score(rnd_points, score_type='balanced')
-
-    # visualize data per cluster in ICA space
-    for l in np.unique(y_b):
-        plt.scatter(rnd_points[:,0], rnd_points[:,1], c=scores_fill[:,int(l)])
-        plt.title('Class '+str(l)+'; Score type = fill')
-        plt.colorbar()
-        plt.show()
-
-        plt.scatter(rnd_points[:,0], rnd_points[:,1], c=scores_balanced[:,int(l)])
-        plt.title('Class '+str(l)+'; Score type = balanced')
-        plt.colorbar()
-        plt.show()
-
-    # augment the dataset
-    X_gen, y_gen = imi.augment()
-
-    # visualize data per cluster in ICA space
-    plt.scatter(X_b[:,0], X_b[:,1], c=y_b)
-    plt.scatter(X_gen[:,0], X_gen[:,1], c=y_gen, edgecolors='red')
-    plt.title('Dataset with generated points (red)')
-    plt.show()
-        
+    References
+    ----------
     .. [1] Katharina Dost, Katerina Taskova, Patricia Riddle, and Jörg Wicker. 
-       "Your Best Guess When You Know Nothing: Identification and Mitigation of Selection 
-       Bias." In: 2020 IEEE International Conference on Data Mining (ICDM), pp. 996-1001, 
-       IEEE, 2020, ISSN: 2374-8486.
+       "Your Best Guess When You Know Nothing: Identification and Mitigation of 
+       Selection Bias." In: 2020 IEEE International Conference on Data Mining (ICDM), 
+       pp. 996-1001, IEEE, 2020, ISSN: 2374-8486.
+        
+    Examples
+    --------
+    >>> from imitatebias.generators import *
+    >>> from imitatebias.imitate import *
+    >>> import matplotlib.pyplot as plt
+
+    Generate a dataset.
+    >>> X, y = generateData(1000, 2, 2, seed=2210)
+
+    Generate a biased dataset.
+    >>> X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)
+
+    initialize Imitate
+    >>> imi = Imitate()
+
+    fit Imitate to the biased dataset
+    >>> imi.fit(X_b, labels=y_b)
+
+    visualize data per cluster in ICA space
+    >>> for l in np.unique(y_b):
+    >>>     data_transformed = imi.icas[l].transform(X_b[y_b == l])
+    >>>     plt.scatter(data_transformed[:,0], data_transformed[:,1])
+    >>>     plt.title('Class '+str(l))
+    >>>     plt.show()
+
+    create some random points to score
+    >>> rnd_points = np.column_stack((np.random.uniform(min(X[:,0]), max(X[:,0]), size=1000), \
+    >>>                               np.random.uniform(min(X[:,1]), max(X[:,1]), size=1000)))
+
+    score the random points
+    >>> scores_fill = imi.score(rnd_points, score_type='fill')
+    >>> scores_balanced = imi.score(rnd_points, score_type='balanced')
+
+    visualize data per cluster in ICA space
+    >>> for l in np.unique(y_b):
+    >>>     plt.scatter(rnd_points[:,0], rnd_points[:,1], c=scores_fill[:,int(l)])
+    >>>     plt.title('Class '+str(l)+'; Score type = fill')
+    >>>     plt.colorbar()
+    >>>     plt.show()
+
+    >>>     plt.scatter(rnd_points[:,0], rnd_points[:,1], c=scores_balanced[:,int(l)])
+    >>>     plt.title('Class '+str(l)+'; Score type = balanced')
+    >>>     plt.colorbar()
+    >>>     plt.show()
+
+    augment the dataset
+    >>> X_gen, y_gen = imi.augment()
+
+    visualize data per cluster in ICA space
+    >>> plt.scatter(X_b[:,0], X_b[:,1], c=y_b)
+    >>> plt.scatter(X_gen[:,0], X_gen[:,1], c=y_gen, edgecolors='red')
+    >>> plt.title('Dataset with generated points (red)')
+    >>> plt.show()
     """
     
     def __init__(self):
@@ -301,8 +303,8 @@ class Imitate:
         parameter controls how strongly these borders are enforced (the non-bounded
         version uses `strength=1`).
         
-        Parameters:
-        
+        Parameters
+        ----------
         data : numpy.ndarray (2D)
             Potentially biased input dataset.
         labels : numpy.array (1D), optional
@@ -318,36 +320,38 @@ class Imitate:
         strength : int, default=1000
             Controls how strongly the bounds are enforced. Will be ignored if no
             bounds are specified.
-            
-        Examples:
-        
-        from imitatebias.generators import *
-        from imitatebias.imitate import *
-        import matplotlib.pyplot as plt
 
-        # Generate a dataset.
-        X, y = generateData(1000, 2, 2, seed=2210)
-
-        # Generate a biased dataset.
-        X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)
-
-        # initialize Imitate
-        imi = Imitate()
-
-        # fit Imitate to the biased dataset
-        imi.fit(X_b, labels=y_b)
-
-        # visualize data per cluster in ICA space
-        for l in np.unique(y_b):
-            data_transformed = imi.icas[l].transform(X_b[y_b == l])
-            plt.scatter(data_transformed[:,0], data_transformed[:,1])
-            plt.title('Class '+str(l))
-            plt.show()
-            
-        .. [1] Katharina Dost, Katerina Taskova, Patricia Riddle, and Jörg Wicker. 
+	References
+	----------
+	.. [1] Katharina Dost, Katerina Taskova, Patricia Riddle, and Jörg Wicker. 
            "Your Best Guess When You Know Nothing: Identification and Mitigation of 
            Selection Bias." In: 2020 IEEE International Conference on Data Mining (ICDM), 
            pp. 996-1001, IEEE, 2020, ISSN: 2374-8486.
+            
+        Examples
+        --------
+        >>> from imitatebias.generators import *
+        >>> from imitatebias.imitate import *
+        >>> import matplotlib.pyplot as plt
+
+        Generate a dataset.
+        >>> X, y = generateData(1000, 2, 2, seed=2210)
+
+        Generate a biased dataset.
+        >>> X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)
+
+        initialize Imitate
+        >>> imi = Imitate()
+
+        fit Imitate to the biased dataset
+        >>> imi.fit(X_b, labels=y_b)
+
+        visualize data per cluster in ICA space
+        >>> for l in np.unique(y_b):
+        >>>     data_transformed = imi.icas[l].transform(X_b[y_b == l])
+        >>>     plt.scatter(data_transformed[:,0], data_transformed[:,1])
+        >>>     plt.title('Class '+str(l))
+        >>>     plt.show()
         """
         self.data = data
         self.labels = np.zeros(len(data)).astype(int) if len(labels)==0 else labels
@@ -386,8 +390,8 @@ class Imitate:
         obtained via the difference of those Gaussians' PDFs and the input data
         (represented via a KDE estimate). See our paper [1]_ for details.
         
-        Parameters:
-        
+        Parameters
+        ----------
         data : numpy.ndarray (2D)
             Data that shall be scored. This dataset does not need to match the input data,
             but it is required to have the same dimensionality.
@@ -399,58 +403,61 @@ class Imitate:
             additionally takes into account how likely a point is to be observed in this 
             dataset. See our paper [2]_ for details.
         
-        Returns:
-        
+        Returns
+        -------
         np.ndarray (2D)
             Score (i,j) corresponds to data point D_i and input data label j. 
-            
-        Examples:
-        
-        from imitatebias.generators import *
-        from imitatebias.imitate import *
-        import matplotlib.pyplot as plt
 
-        # Generate a dataset.
-        X, y = generateData(1000, 2, 2, seed=2210)
-
-        # Generate a biased dataset.
-        X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)
-
-        # initialize Imitate
-        imi = Imitate()
-
-        # fit Imitate to the biased dataset
-        imi.fit(X_b, labels=y_b)
-
-        # create some random points to score
-        rnd_points = np.column_stack((np.random.uniform(min(X[:,0]), max(X[:,0]), size=1000), \
-                                      np.random.uniform(min(X[:,1]), max(X[:,1]), size=1000)))
-
-        # score the random points
-        scores_fill = imi.score(rnd_points, score_type='fill')
-        scores_balanced = imi.score(rnd_points, score_type='balanced')
-
-        # visualize data per cluster in ICA space
-        for l in np.unique(y_b):
-            plt.scatter(rnd_points[:,0], rnd_points[:,1], c=scores_fill[:,int(l)])
-            plt.title('Class '+str(l)+'; Score type = fill')
-            plt.colorbar()
-            plt.show()
-
-            plt.scatter(rnd_points[:,0], rnd_points[:,1], c=scores_balanced[:,int(l)])
-            plt.title('Class '+str(l)+'; Score type = balanced')
-            plt.colorbar()
-            plt.show()
-            
+	References
+	----------
         .. [1] Katharina Dost, Katerina Taskova, Patricia Riddle, and Jörg Wicker. 
            "Your Best Guess When You Know Nothing: Identification and Mitigation of 
            Selection Bias." In: 2020 IEEE International Conference on Data Mining (ICDM), 
            pp. 996-1001, IEEE, 2020, ISSN: 2374-8486.
+
         .. [2] Katharina Dost, Hamish Duncanson, Ioannis Ziogas, Patricia Riddle, and Jörg 
            Wicker. "Divide and Imitate: Multi-Cluster Identification and Mitigation of 
            Selection Bias." In: Advances in Knowledge Discovery and Data Mining - 26th 
            Pacific-Asia Conference, PAKDD 2022. Lecture Notes in Computer Science, vol. 
            13281, pp. 149-160. Springer, Cham (2022).
+            
+        Examples
+        --------
+        >>> from imitatebias.generators import *
+        >>> from imitatebias.imitate import *
+        >>> import matplotlib.pyplot as plt
+
+        Generate a dataset.
+        >>> X, y = generateData(1000, 2, 2, seed=2210)
+
+        Generate a biased dataset.
+        >>> X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)
+
+        initialize Imitate
+        >>> imi = Imitate()
+
+        fit Imitate to the biased dataset
+        >>> imi.fit(X_b, labels=y_b)
+
+        create some random points to score
+        >>> rnd_points = np.column_stack((np.random.uniform(min(X[:,0]), max(X[:,0]), size=1000), \
+        >>>                               np.random.uniform(min(X[:,1]), max(X[:,1]), size=1000)))
+
+        score the random points
+        >>> scores_fill = imi.score(rnd_points, score_type='fill')
+        >>> scores_balanced = imi.score(rnd_points, score_type='balanced')
+
+        visualize data per cluster in ICA space
+        >>> for l in np.unique(y_b):
+        >>>     plt.scatter(rnd_points[:,0], rnd_points[:,1], c=scores_fill[:,int(l)])
+        >>>     plt.title('Class '+str(l)+'; Score type = fill')
+        >>>     plt.colorbar()
+        >>>     plt.show()
+
+        >>>     plt.scatter(rnd_points[:,0], rnd_points[:,1], c=scores_balanced[:,int(l)])
+        >>>     plt.title('Class '+str(l)+'; Score type = balanced')
+        >>>     plt.colorbar()
+        >>>     plt.show()
         """
         scores = np.zeros((len(data), len(self.icas)))
         for i,l in enumerate(np.unique(self.labels)): # fill scores[:,i]
@@ -483,39 +490,39 @@ class Imitate:
         Generates points to mitigate the bias in the input dataset provided to the `fit` method.
         The number of generated points per label is determined by `Imitate.num_fill_up`.
         
-        Returns:
-        
+        Returns
+        -------
         numpy.ndarray (2D)
             Generated points.
         numpy.array (1D)
             Corresponding labels.
         
-        Examples:
-        
-        from imitatebias.generators import *
-        from imitatebias.imitate import *
-        import matplotlib.pyplot as plt
+        Examples
+        --------
+        >>> from imitatebias.generators import *
+        >>> from imitatebias.imitate import *
+        >>> import matplotlib.pyplot as plt
 
-        # Generate a dataset.
-        X, y = generateData(1000, 2, 2, seed=2210)
+        Generate a dataset.
+        >>> X, y = generateData(1000, 2, 2, seed=2210)
 
-        # Generate a biased dataset.
-        X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)
+        Generate a biased dataset.
+        >>> X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)
 
-        # initialize Imitate
-        imi = Imitate()
+        initialize Imitate
+        >>> imi = Imitate()
 
-        # fit Imitate to the biased dataset
-        imi.fit(X_b, labels=y_b)
+        fit Imitate to the biased dataset
+        >>> imi.fit(X_b, labels=y_b)
 
-        # augment the dataset
-        X_gen, y_gen = imi.augment()
+        augment the dataset
+        >>> X_gen, y_gen = imi.augment()
 
-        # visualize data per cluster in ICA space
-        plt.scatter(X_b[:,0], X_b[:,1], c=y_b)
-        plt.scatter(X_gen[:,0], X_gen[:,1], c=y_gen, edgecolors='red')
-        plt.title('Dataset with generated points (red)')
-        plt.show()
+        visualize data per cluster in ICA space
+        >>> plt.scatter(X_b[:,0], X_b[:,1], c=y_b)
+        >>> plt.scatter(X_gen[:,0], X_gen[:,1], c=y_gen, edgecolors='red')
+        >>> plt.title('Dataset with generated points (red)')
+        >>> plt.show()
         """
         gen_points = np.empty((0, len(self.data[0])))
         gen_labels = []
