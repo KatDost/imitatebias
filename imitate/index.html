@@ -1,0 +1,2345 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://example.com/imitate/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.6">
+    
+    
+      
+        <title>Imitate - imitatebias Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.20d9efc8.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#imitatebias.imitate" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="imitatebias Documentation" class="md-header__button md-logo" aria-label="imitatebias Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            imitatebias Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Imitate
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="imitatebias Documentation" class="md-nav__button md-logo" aria-label="imitatebias Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    imitatebias Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Imitate
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Imitate
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#imitatebias.imitate" class="md-nav__link">
+    imitatebias.imitate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imitatebias.imitate.Imitate" class="md-nav__link">
+    Imitate
+  </a>
+  
+    <nav class="md-nav" aria-label="Imitate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#imitatebias.imitate.Imitate--methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imitatebias.imitate.Imitate--references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imitatebias.imitate.Imitate.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imitatebias.imitate.Imitate.augment" class="md-nav__link">
+    augment()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imitatebias.imitate.Imitate.fit" class="md-nav__link">
+    fit()
+  </a>
+  
+    <nav class="md-nav" aria-label="fit()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#imitatebias.imitate.Imitate.fit--references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imitatebias.imitate.Imitate.score" class="md-nav__link">
+    score()
+  </a>
+  
+    <nav class="md-nav" aria-label="score()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#imitatebias.imitate.Imitate.score--references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mimic/" class="md-nav__link">
+        Mimic
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cancels/" class="md-nav__link">
+        Cancels
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generators/" class="md-nav__link">
+        Data and Bias Generators
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#imitatebias.imitate" class="md-nav__link">
+    imitatebias.imitate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imitatebias.imitate.Imitate" class="md-nav__link">
+    Imitate
+  </a>
+  
+    <nav class="md-nav" aria-label="Imitate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#imitatebias.imitate.Imitate--methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imitatebias.imitate.Imitate--references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imitatebias.imitate.Imitate.__init__" class="md-nav__link">
+    __init__()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imitatebias.imitate.Imitate.augment" class="md-nav__link">
+    augment()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imitatebias.imitate.Imitate.fit" class="md-nav__link">
+    fit()
+  </a>
+  
+    <nav class="md-nav" aria-label="fit()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#imitatebias.imitate.Imitate.fit--references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imitatebias.imitate.Imitate.score" class="md-nav__link">
+    score()
+  </a>
+  
+    <nav class="md-nav" aria-label="score()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#imitatebias.imitate.Imitate.score--references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Imitate</h1>
+
+<div class="doc doc-object doc-module">
+
+
+<a id="imitatebias.imitate"></a>
+  <div class="doc doc-contents first">
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="imitatebias.imitate.Imitate" class="doc doc-heading">
+        <code>Imitate</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+
+  
+      <p>Imitate generates points to mitigate a dataset's bias.</p>
+<p>Imitate investigates the dataset's probability density, then adds generated points 
+in order to smooth out the density and have it resemble a Gaussian, the most common 
+density occurring in real-world applications. If the artificial points focus on 
+certain areas and are not widespread, this could indicate a Selection Bias where 
+these areas are underrepresented in the sample.</p>
+<p>See our paper [1]_ for details.</p>
+
+  <p><strong>Attributes:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>icas</code></td>
+          <td>
+                <code>list(sklearn.<span title="sklearn.decomposition">decomposition</span>.<span title="sklearn.decomposition.FastICA">FastICA</span>)</code>
+          </td>
+          <td><p>A list of <code>FastICA</code> objects trained per label in the training set.</p></td>
+        </tr>
+        <tr>
+          <td><code>grids</code></td>
+          <td>
+                <code>dict(string or int or float: numpy.ndarray (2D))</code>
+          </td>
+          <td><p>A dictionary mapping a class label to its corresponding grids per dimension 
+over which KDE was evaluated.</p></td>
+        </tr>
+        <tr>
+          <td><code>vals</code></td>
+          <td>
+                <code>dict(string or int or float: numpy.ndarray (2D))</code>
+          </td>
+          <td><p>A KDE density representation of the dataset evaluated over <code>grids</code>.</p></td>
+        </tr>
+        <tr>
+          <td><code>fitted</code></td>
+          <td>
+                <code>dict(string or int or float: numpy.ndarray (2D))</code>
+          </td>
+          <td><p>Fitted Gaussian PDF evaluated over <code>grids</code>.</p></td>
+        </tr>
+        <tr>
+          <td><code>fill_up</code></td>
+          <td>
+                <code>dict(string or int or float: numpy.ndarray (2D))</code>
+          </td>
+          <td><p><code>vals - fitted</code>, evaluated over <code>grids</code>.</p></td>
+        </tr>
+        <tr>
+          <td><code>num_fill_up</code></td>
+          <td>
+                <code>dict(string or int or float: numpy.array (1D))</code>
+          </td>
+          <td><p>The necessary number of points to add to mitigate the bias; per label and 
+dimension.</p></td>
+        </tr>
+    </tbody>
+  </table>
+      <h4 id="imitatebias.imitate.Imitate--methods">Methods</h4>
+<p>fit(data, labels=[], bounds={}, strength=1000)
+    Fits the Imitate Gaussians to a dataset.
+score(data)
+    Scores new data based on Imitate'd fitted Gaussians.
+augment()
+    Augments the fitted dataset to mitigate its bias.</p>
+<h4 id="imitatebias.imitate.Imitate--references">References</h4>
+<p>.. [1] Katharina Dost, Katerina Taskova, Patricia Riddle, and Jörg Wicker. 
+   "Your Best Guess When You Know Nothing: Identification and Mitigation of 
+   Selection Bias." In: 2020 IEEE International Conference on Data Mining (ICDM), 
+   pp. 996-1001, IEEE, 2020, ISSN: 2374-8486.</p>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">imitatebias.generators</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">imitatebias.imitate</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</code></pre></div>
+    <p>Generate a dataset.</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">generateData</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">2210</span><span class="p">)</span>
+</code></pre></div>
+    <p>Generate a biased dataset.</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">X_b</span><span class="p">,</span> <span class="n">y_b</span><span class="p">,</span> <span class="n">idcs_deleted</span> <span class="o">=</span> <span class="n">generateBias</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">2210</span><span class="p">)</span>
+</code></pre></div>
+    <p>initialize Imitate</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">imi</span> <span class="o">=</span> <span class="n">Imitate</span><span class="p">()</span>
+</code></pre></div>
+    <p>fit Imitate to the biased dataset</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">imi</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_b</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">y_b</span><span class="p">)</span>
+</code></pre></div>
+    <p>visualize data per cluster in ICA space</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">y_b</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">data_transformed</span> <span class="o">=</span> <span class="n">imi</span><span class="o">.</span><span class="n">icas</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_b</span><span class="p">[</span><span class="n">y_b</span> <span class="o">==</span> <span class="n">l</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">data_transformed</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">data_transformed</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Class &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">l</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+    <p>create some random points to score</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">rnd_points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">column_stack</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">max</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]),</span> <span class="n">size</span><span class="o">=</span><span class="mi">1000</span><span class="p">),</span>     <span class="o">&gt;&gt;&gt;</span>                               <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]),</span> <span class="nb">max</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]),</span> <span class="n">size</span><span class="o">=</span><span class="mi">1000</span><span class="p">)))</span>
+</code></pre></div>
+    <p>score the random points</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">scores_fill</span> <span class="o">=</span> <span class="n">imi</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">rnd_points</span><span class="p">,</span> <span class="n">score_type</span><span class="o">=</span><span class="s1">&#39;fill&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">scores_balanced</span> <span class="o">=</span> <span class="n">imi</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">rnd_points</span><span class="p">,</span> <span class="n">score_type</span><span class="o">=</span><span class="s1">&#39;balanced&#39;</span><span class="p">)</span>
+</code></pre></div>
+    <p>visualize data per cluster in ICA space</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">y_b</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">rnd_points</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">rnd_points</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">scores_fill</span><span class="p">[:,</span><span class="nb">int</span><span class="p">(</span><span class="n">l</span><span class="p">)])</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Class &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;; Score type = fill&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">rnd_points</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">rnd_points</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">scores_balanced</span><span class="p">[:,</span><span class="nb">int</span><span class="p">(</span><span class="n">l</span><span class="p">)])</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Class &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;; Score type = balanced&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+    <p>augment the dataset</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">X_gen</span><span class="p">,</span> <span class="n">y_gen</span> <span class="o">=</span> <span class="n">imi</span><span class="o">.</span><span class="n">augment</span><span class="p">()</span>
+</code></pre></div>
+    <p>visualize data per cluster in ICA space</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X_b</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">X_b</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">y_b</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X_gen</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">X_gen</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">y_gen</span><span class="p">,</span> <span class="n">edgecolors</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Dataset with generated points (red)&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+
+        <details class="quote">
+          <summary>Source code in <code>imitatebias\imitate.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span>
+<span class="normal">256</span>
+<span class="normal">257</span>
+<span class="normal">258</span>
+<span class="normal">259</span>
+<span class="normal">260</span>
+<span class="normal">261</span>
+<span class="normal">262</span>
+<span class="normal">263</span>
+<span class="normal">264</span>
+<span class="normal">265</span>
+<span class="normal">266</span>
+<span class="normal">267</span>
+<span class="normal">268</span>
+<span class="normal">269</span>
+<span class="normal">270</span>
+<span class="normal">271</span>
+<span class="normal">272</span>
+<span class="normal">273</span>
+<span class="normal">274</span>
+<span class="normal">275</span>
+<span class="normal">276</span>
+<span class="normal">277</span>
+<span class="normal">278</span>
+<span class="normal">279</span>
+<span class="normal">280</span>
+<span class="normal">281</span>
+<span class="normal">282</span>
+<span class="normal">283</span>
+<span class="normal">284</span>
+<span class="normal">285</span>
+<span class="normal">286</span>
+<span class="normal">287</span>
+<span class="normal">288</span>
+<span class="normal">289</span>
+<span class="normal">290</span>
+<span class="normal">291</span>
+<span class="normal">292</span>
+<span class="normal">293</span>
+<span class="normal">294</span>
+<span class="normal">295</span>
+<span class="normal">296</span>
+<span class="normal">297</span>
+<span class="normal">298</span>
+<span class="normal">299</span>
+<span class="normal">300</span>
+<span class="normal">301</span>
+<span class="normal">302</span>
+<span class="normal">303</span>
+<span class="normal">304</span>
+<span class="normal">305</span>
+<span class="normal">306</span>
+<span class="normal">307</span>
+<span class="normal">308</span>
+<span class="normal">309</span>
+<span class="normal">310</span>
+<span class="normal">311</span>
+<span class="normal">312</span>
+<span class="normal">313</span>
+<span class="normal">314</span>
+<span class="normal">315</span>
+<span class="normal">316</span>
+<span class="normal">317</span>
+<span class="normal">318</span>
+<span class="normal">319</span>
+<span class="normal">320</span>
+<span class="normal">321</span>
+<span class="normal">322</span>
+<span class="normal">323</span>
+<span class="normal">324</span>
+<span class="normal">325</span>
+<span class="normal">326</span>
+<span class="normal">327</span>
+<span class="normal">328</span>
+<span class="normal">329</span>
+<span class="normal">330</span>
+<span class="normal">331</span>
+<span class="normal">332</span>
+<span class="normal">333</span>
+<span class="normal">334</span>
+<span class="normal">335</span>
+<span class="normal">336</span>
+<span class="normal">337</span>
+<span class="normal">338</span>
+<span class="normal">339</span>
+<span class="normal">340</span>
+<span class="normal">341</span>
+<span class="normal">342</span>
+<span class="normal">343</span>
+<span class="normal">344</span>
+<span class="normal">345</span>
+<span class="normal">346</span>
+<span class="normal">347</span>
+<span class="normal">348</span>
+<span class="normal">349</span>
+<span class="normal">350</span>
+<span class="normal">351</span>
+<span class="normal">352</span>
+<span class="normal">353</span>
+<span class="normal">354</span>
+<span class="normal">355</span>
+<span class="normal">356</span>
+<span class="normal">357</span>
+<span class="normal">358</span>
+<span class="normal">359</span>
+<span class="normal">360</span>
+<span class="normal">361</span>
+<span class="normal">362</span>
+<span class="normal">363</span>
+<span class="normal">364</span>
+<span class="normal">365</span>
+<span class="normal">366</span>
+<span class="normal">367</span>
+<span class="normal">368</span>
+<span class="normal">369</span>
+<span class="normal">370</span>
+<span class="normal">371</span>
+<span class="normal">372</span>
+<span class="normal">373</span>
+<span class="normal">374</span>
+<span class="normal">375</span>
+<span class="normal">376</span>
+<span class="normal">377</span>
+<span class="normal">378</span>
+<span class="normal">379</span>
+<span class="normal">380</span>
+<span class="normal">381</span>
+<span class="normal">382</span>
+<span class="normal">383</span>
+<span class="normal">384</span>
+<span class="normal">385</span>
+<span class="normal">386</span>
+<span class="normal">387</span>
+<span class="normal">388</span>
+<span class="normal">389</span>
+<span class="normal">390</span>
+<span class="normal">391</span>
+<span class="normal">392</span>
+<span class="normal">393</span>
+<span class="normal">394</span>
+<span class="normal">395</span>
+<span class="normal">396</span>
+<span class="normal">397</span>
+<span class="normal">398</span>
+<span class="normal">399</span>
+<span class="normal">400</span>
+<span class="normal">401</span>
+<span class="normal">402</span>
+<span class="normal">403</span>
+<span class="normal">404</span>
+<span class="normal">405</span>
+<span class="normal">406</span>
+<span class="normal">407</span>
+<span class="normal">408</span>
+<span class="normal">409</span>
+<span class="normal">410</span>
+<span class="normal">411</span>
+<span class="normal">412</span>
+<span class="normal">413</span>
+<span class="normal">414</span>
+<span class="normal">415</span>
+<span class="normal">416</span>
+<span class="normal">417</span>
+<span class="normal">418</span>
+<span class="normal">419</span>
+<span class="normal">420</span>
+<span class="normal">421</span>
+<span class="normal">422</span>
+<span class="normal">423</span>
+<span class="normal">424</span>
+<span class="normal">425</span>
+<span class="normal">426</span>
+<span class="normal">427</span>
+<span class="normal">428</span>
+<span class="normal">429</span>
+<span class="normal">430</span>
+<span class="normal">431</span>
+<span class="normal">432</span>
+<span class="normal">433</span>
+<span class="normal">434</span>
+<span class="normal">435</span>
+<span class="normal">436</span>
+<span class="normal">437</span>
+<span class="normal">438</span>
+<span class="normal">439</span>
+<span class="normal">440</span>
+<span class="normal">441</span>
+<span class="normal">442</span>
+<span class="normal">443</span>
+<span class="normal">444</span>
+<span class="normal">445</span>
+<span class="normal">446</span>
+<span class="normal">447</span>
+<span class="normal">448</span>
+<span class="normal">449</span>
+<span class="normal">450</span>
+<span class="normal">451</span>
+<span class="normal">452</span>
+<span class="normal">453</span>
+<span class="normal">454</span>
+<span class="normal">455</span>
+<span class="normal">456</span>
+<span class="normal">457</span>
+<span class="normal">458</span>
+<span class="normal">459</span>
+<span class="normal">460</span>
+<span class="normal">461</span>
+<span class="normal">462</span>
+<span class="normal">463</span>
+<span class="normal">464</span>
+<span class="normal">465</span>
+<span class="normal">466</span>
+<span class="normal">467</span>
+<span class="normal">468</span>
+<span class="normal">469</span>
+<span class="normal">470</span>
+<span class="normal">471</span>
+<span class="normal">472</span>
+<span class="normal">473</span>
+<span class="normal">474</span>
+<span class="normal">475</span>
+<span class="normal">476</span>
+<span class="normal">477</span>
+<span class="normal">478</span>
+<span class="normal">479</span>
+<span class="normal">480</span>
+<span class="normal">481</span>
+<span class="normal">482</span>
+<span class="normal">483</span>
+<span class="normal">484</span>
+<span class="normal">485</span>
+<span class="normal">486</span>
+<span class="normal">487</span>
+<span class="normal">488</span>
+<span class="normal">489</span>
+<span class="normal">490</span>
+<span class="normal">491</span>
+<span class="normal">492</span>
+<span class="normal">493</span>
+<span class="normal">494</span>
+<span class="normal">495</span>
+<span class="normal">496</span>
+<span class="normal">497</span>
+<span class="normal">498</span>
+<span class="normal">499</span>
+<span class="normal">500</span>
+<span class="normal">501</span>
+<span class="normal">502</span>
+<span class="normal">503</span>
+<span class="normal">504</span>
+<span class="normal">505</span>
+<span class="normal">506</span>
+<span class="normal">507</span>
+<span class="normal">508</span>
+<span class="normal">509</span>
+<span class="normal">510</span>
+<span class="normal">511</span>
+<span class="normal">512</span>
+<span class="normal">513</span>
+<span class="normal">514</span>
+<span class="normal">515</span>
+<span class="normal">516</span>
+<span class="normal">517</span>
+<span class="normal">518</span>
+<span class="normal">519</span>
+<span class="normal">520</span>
+<span class="normal">521</span>
+<span class="normal">522</span>
+<span class="normal">523</span>
+<span class="normal">524</span>
+<span class="normal">525</span>
+<span class="normal">526</span>
+<span class="normal">527</span>
+<span class="normal">528</span>
+<span class="normal">529</span>
+<span class="normal">530</span>
+<span class="normal">531</span>
+<span class="normal">532</span>
+<span class="normal">533</span>
+<span class="normal">534</span>
+<span class="normal">535</span>
+<span class="normal">536</span>
+<span class="normal">537</span>
+<span class="normal">538</span>
+<span class="normal">539</span>
+<span class="normal">540</span>
+<span class="normal">541</span>
+<span class="normal">542</span>
+<span class="normal">543</span>
+<span class="normal">544</span>
+<span class="normal">545</span>
+<span class="normal">546</span>
+<span class="normal">547</span>
+<span class="normal">548</span>
+<span class="normal">549</span>
+<span class="normal">550</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Imitate</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Imitate generates points to mitigate a dataset&#39;s bias.</span>
+
+<span class="sd">    Imitate investigates the dataset&#39;s probability density, then adds generated points </span>
+<span class="sd">    in order to smooth out the density and have it resemble a Gaussian, the most common </span>
+<span class="sd">    density occurring in real-world applications. If the artificial points focus on </span>
+<span class="sd">    certain areas and are not widespread, this could indicate a Selection Bias where </span>
+<span class="sd">    these areas are underrepresented in the sample.</span>
+
+<span class="sd">    See our paper [1]_ for details.</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    icas : list(sklearn.decomposition.FastICA) </span>
+<span class="sd">        A list of `FastICA` objects trained per label in the training set.</span>
+<span class="sd">    grids : dict(string or int or float: numpy.ndarray (2D))</span>
+<span class="sd">        A dictionary mapping a class label to its corresponding grids per dimension </span>
+<span class="sd">        over which KDE was evaluated.</span>
+<span class="sd">    vals : dict(string or int or float: numpy.ndarray (2D))</span>
+<span class="sd">        A KDE density representation of the dataset evaluated over `grids`.</span>
+<span class="sd">    fitted : dict(string or int or float: numpy.ndarray (2D))</span>
+<span class="sd">        Fitted Gaussian PDF evaluated over `grids`.</span>
+<span class="sd">    fill_up : dict(string or int or float: numpy.ndarray (2D))</span>
+<span class="sd">        `vals - fitted`, evaluated over `grids`.</span>
+<span class="sd">    num_fill_up : dict(string or int or float: numpy.array (1D))</span>
+<span class="sd">        The necessary number of points to add to mitigate the bias; per label and </span>
+<span class="sd">        dimension.</span>
+
+<span class="sd">    Methods</span>
+<span class="sd">    -------</span>
+<span class="sd">    fit(data, labels=[], bounds={}, strength=1000)</span>
+<span class="sd">        Fits the Imitate Gaussians to a dataset.</span>
+<span class="sd">    score(data)</span>
+<span class="sd">        Scores new data based on Imitate&#39;d fitted Gaussians.</span>
+<span class="sd">    augment()</span>
+<span class="sd">        Augments the fitted dataset to mitigate its bias.</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    .. [1] Katharina Dost, Katerina Taskova, Patricia Riddle, and Jörg Wicker. </span>
+<span class="sd">       &quot;Your Best Guess When You Know Nothing: Identification and Mitigation of </span>
+<span class="sd">       Selection Bias.&quot; In: 2020 IEEE International Conference on Data Mining (ICDM), </span>
+<span class="sd">       pp. 996-1001, IEEE, 2020, ISSN: 2374-8486.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; from imitatebias.generators import *</span>
+<span class="sd">    &gt;&gt;&gt; from imitatebias.imitate import *</span>
+<span class="sd">    &gt;&gt;&gt; import matplotlib.pyplot as plt</span>
+
+<span class="sd">    Generate a dataset.</span>
+<span class="sd">    &gt;&gt;&gt; X, y = generateData(1000, 2, 2, seed=2210)</span>
+
+<span class="sd">    Generate a biased dataset.</span>
+<span class="sd">    &gt;&gt;&gt; X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)</span>
+
+<span class="sd">    initialize Imitate</span>
+<span class="sd">    &gt;&gt;&gt; imi = Imitate()</span>
+
+<span class="sd">    fit Imitate to the biased dataset</span>
+<span class="sd">    &gt;&gt;&gt; imi.fit(X_b, labels=y_b)</span>
+
+<span class="sd">    visualize data per cluster in ICA space</span>
+<span class="sd">    &gt;&gt;&gt; for l in np.unique(y_b):</span>
+<span class="sd">    &gt;&gt;&gt;     data_transformed = imi.icas[l].transform(X_b[y_b == l])</span>
+<span class="sd">    &gt;&gt;&gt;     plt.scatter(data_transformed[:,0], data_transformed[:,1])</span>
+<span class="sd">    &gt;&gt;&gt;     plt.title(&#39;Class &#39;+str(l))</span>
+<span class="sd">    &gt;&gt;&gt;     plt.show()</span>
+
+<span class="sd">    create some random points to score</span>
+<span class="sd">    &gt;&gt;&gt; rnd_points = np.column_stack((np.random.uniform(min(X[:,0]), max(X[:,0]), size=1000), \</span>
+<span class="sd">    &gt;&gt;&gt;                               np.random.uniform(min(X[:,1]), max(X[:,1]), size=1000)))</span>
+
+<span class="sd">    score the random points</span>
+<span class="sd">    &gt;&gt;&gt; scores_fill = imi.score(rnd_points, score_type=&#39;fill&#39;)</span>
+<span class="sd">    &gt;&gt;&gt; scores_balanced = imi.score(rnd_points, score_type=&#39;balanced&#39;)</span>
+
+<span class="sd">    visualize data per cluster in ICA space</span>
+<span class="sd">    &gt;&gt;&gt; for l in np.unique(y_b):</span>
+<span class="sd">    &gt;&gt;&gt;     plt.scatter(rnd_points[:,0], rnd_points[:,1], c=scores_fill[:,int(l)])</span>
+<span class="sd">    &gt;&gt;&gt;     plt.title(&#39;Class &#39;+str(l)+&#39;; Score type = fill&#39;)</span>
+<span class="sd">    &gt;&gt;&gt;     plt.colorbar()</span>
+<span class="sd">    &gt;&gt;&gt;     plt.show()</span>
+
+<span class="sd">    &gt;&gt;&gt;     plt.scatter(rnd_points[:,0], rnd_points[:,1], c=scores_balanced[:,int(l)])</span>
+<span class="sd">    &gt;&gt;&gt;     plt.title(&#39;Class &#39;+str(l)+&#39;; Score type = balanced&#39;)</span>
+<span class="sd">    &gt;&gt;&gt;     plt.colorbar()</span>
+<span class="sd">    &gt;&gt;&gt;     plt.show()</span>
+
+<span class="sd">    augment the dataset</span>
+<span class="sd">    &gt;&gt;&gt; X_gen, y_gen = imi.augment()</span>
+
+<span class="sd">    visualize data per cluster in ICA space</span>
+<span class="sd">    &gt;&gt;&gt; plt.scatter(X_b[:,0], X_b[:,1], c=y_b)</span>
+<span class="sd">    &gt;&gt;&gt; plt.scatter(X_gen[:,0], X_gen[:,1], c=y_gen, edgecolors=&#39;red&#39;)</span>
+<span class="sd">    &gt;&gt;&gt; plt.title(&#39;Dataset with generated points (red)&#39;)</span>
+<span class="sd">    &gt;&gt;&gt; plt.show()</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Imitate Constructor.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">icas</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">grids</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">vals</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fitted</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fill_up</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">num_fill_up</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="p">[],</span> <span class="n">bounds</span><span class="o">=</span><span class="p">{},</span> <span class="n">bounds_set</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">strength</span><span class="o">=</span><span class="mi">1000</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Fits a bias-aware multivariate Gaussian per label to the data.</span>
+
+<span class="sd">        Given a dataset and a potential label array, Imitate splits the data per </span>
+<span class="sd">        class and operates on each subset individually. For each of those labels, </span>
+<span class="sd">        fit fits a multivariate Gaussian to the subset that accounts for potential </span>
+<span class="sd">        biases. See our paper [1]_ for details.</span>
+<span class="sd">        Custom borders can be defined that constrain the fitting process. The strength</span>
+<span class="sd">        parameter controls how strongly these borders are enforced (the non-bounded</span>
+<span class="sd">        version uses `strength=1`).</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        data : numpy.ndarray (2D)</span>
+<span class="sd">            Potentially biased input dataset.</span>
+<span class="sd">        labels : numpy.array (1D), optional</span>
+<span class="sd">            Labels corresponding to the dataset if available.</span>
+<span class="sd">        bounds : dict(string or int or float: numpy.ndarray (2D)), optional</span>
+<span class="sd">            Bounds Imitate if provided, for each label, in the shape </span>
+<span class="sd">            ``[[min_0, max_0], ..., [min_d, max_d]]``</span>
+<span class="sd">            for d dimensions. Use a `dictionary` to map each label to its correct</span>
+<span class="sd">            bounds.</span>
+<span class="sd">        bounds_set : numpy.ndarray (2D)</span>
+<span class="sd">            If Imitate should be bounded to the ranges of a certain dataset, this set</span>
+<span class="sd">            can be passed to it directly. Will be overwritten by `bounds` if specified.</span>
+<span class="sd">        strength : int, default=1000</span>
+<span class="sd">            Controls how strongly the bounds are enforced. Will be ignored if no</span>
+<span class="sd">            bounds are specified.</span>
+
+<span class="sd">	References</span>
+<span class="sd">	----------</span>
+<span class="sd">	.. [1] Katharina Dost, Katerina Taskova, Patricia Riddle, and Jörg Wicker. </span>
+<span class="sd">           &quot;Your Best Guess When You Know Nothing: Identification and Mitigation of </span>
+<span class="sd">           Selection Bias.&quot; In: 2020 IEEE International Conference on Data Mining (ICDM), </span>
+<span class="sd">           pp. 996-1001, IEEE, 2020, ISSN: 2374-8486.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        &gt;&gt;&gt; from imitatebias.generators import *</span>
+<span class="sd">        &gt;&gt;&gt; from imitatebias.imitate import *</span>
+<span class="sd">        &gt;&gt;&gt; import matplotlib.pyplot as plt</span>
+
+<span class="sd">        Generate a dataset.</span>
+<span class="sd">        &gt;&gt;&gt; X, y = generateData(1000, 2, 2, seed=2210)</span>
+
+<span class="sd">        Generate a biased dataset.</span>
+<span class="sd">        &gt;&gt;&gt; X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)</span>
+
+<span class="sd">        initialize Imitate</span>
+<span class="sd">        &gt;&gt;&gt; imi = Imitate()</span>
+
+<span class="sd">        fit Imitate to the biased dataset</span>
+<span class="sd">        &gt;&gt;&gt; imi.fit(X_b, labels=y_b)</span>
+
+<span class="sd">        visualize data per cluster in ICA space</span>
+<span class="sd">        &gt;&gt;&gt; for l in np.unique(y_b):</span>
+<span class="sd">        &gt;&gt;&gt;     data_transformed = imi.icas[l].transform(X_b[y_b == l])</span>
+<span class="sd">        &gt;&gt;&gt;     plt.scatter(data_transformed[:,0], data_transformed[:,1])</span>
+<span class="sd">        &gt;&gt;&gt;     plt.title(&#39;Class &#39;+str(l))</span>
+<span class="sd">        &gt;&gt;&gt;     plt.show()</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">labels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">))</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span> <span class="k">else</span> <span class="n">labels</span>
+        <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">labels</span><span class="p">):</span>
+            <span class="n">d</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">labels</span> <span class="o">==</span> <span class="n">l</span><span class="p">]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">icas</span><span class="p">[</span><span class="n">l</span><span class="p">]</span> <span class="o">=</span> <span class="n">FastICA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">whiten</span><span class="o">=</span><span class="s1">&#39;arbitrary-variance&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">icas</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+            <span class="n">d_trf</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">icas</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">bounds</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">b</span> <span class="o">=</span> <span class="n">bounds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">bounds</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span> <span class="k">else</span> <span class="kc">None</span>            
+                <span class="n">p_gen</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">column_stack</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">*</span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="mi">1000</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">]))])</span>            
+                <span class="n">p_trf</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ica</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">p_gen</span><span class="p">)</span>
+                <span class="n">bounds_trf</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">p_trf</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">p_trf</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)))</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+                <span class="n">range_trf</span> <span class="o">=</span> <span class="n">bounds_trf</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">bounds_trf</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+                <span class="n">bounds_relaxed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">bounds_trf</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mf">0.1</span><span class="o">*</span><span class="n">range_trf</span><span class="p">,</span> <span class="n">bounds_trf</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mf">0.1</span><span class="o">*</span><span class="n">range_trf</span><span class="p">))</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+
+                <span class="bp">self</span><span class="o">.</span><span class="n">grids</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">vals</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">fitted</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">fill_up</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_fill_up</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">run_imitate</span><span class="p">(</span>
+                    <span class="n">d_trf</span><span class="p">,</span> <span class="n">bounds</span><span class="o">=</span><span class="n">bounds_relaxed</span><span class="p">,</span> <span class="n">strength</span><span class="o">=</span><span class="n">strength</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">bounds_set</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">p_trf</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ica</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">bounds_set</span><span class="p">)</span>
+                <span class="n">bounds_trf</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">p_trf</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">p_trf</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)))</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+                <span class="n">range_trf</span> <span class="o">=</span> <span class="n">bounds_trf</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">bounds_trf</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+                <span class="n">bounds_relaxed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">bounds_trf</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mf">0.1</span><span class="o">*</span><span class="n">range_trf</span><span class="p">,</span> <span class="n">bounds_trf</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mf">0.1</span><span class="o">*</span><span class="n">range_trf</span><span class="p">))</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+
+                <span class="bp">self</span><span class="o">.</span><span class="n">grids</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">vals</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">fitted</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">fill_up</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_fill_up</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">run_imitate</span><span class="p">(</span>
+                    <span class="n">d_trf</span><span class="p">,</span> <span class="n">bounds</span><span class="o">=</span><span class="n">bounds_relaxed</span><span class="p">,</span> <span class="n">strength</span><span class="o">=</span><span class="n">strength</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">grids</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">vals</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">fitted</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">fill_up</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_fill_up</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">run_imitate</span><span class="p">(</span>
+                    <span class="n">d_trf</span><span class="p">,</span> <span class="n">bounds</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">strength</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">score</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">score_type</span><span class="o">=</span><span class="s1">&#39;fill&#39;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Scores new data based on Imitate&#39;s fitted Gaussian.</span>
+
+<span class="sd">        Imitate fits one multivariate Gaussian per label in a dataset. Scores are </span>
+<span class="sd">        obtained via the difference of those Gaussians&#39; PDFs and the input data</span>
+<span class="sd">        (represented via a KDE estimate). See our paper [1]_ for details.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        data : numpy.ndarray (2D)</span>
+<span class="sd">            Data that shall be scored. This dataset does not need to match the input data,</span>
+<span class="sd">            but it is required to have the same dimensionality.</span>
+<span class="sd">        score_type : {&#39;fill&#39;, &#39;balanced&#39;}, default=&#39;fill&#39;</span>
+<span class="sd">            Selects the type of score. `&#39;fill&#39;` measures how well a data points fills in</span>
+<span class="sd">            the identified bias, i.e., it quantifies the difference between the fitted</span>
+<span class="sd">            and the observed dataset distribution. The score is set to 0 if the 3-std-</span>
+<span class="sd">            truncated fitted Gaussian&#39;s PDF at this point evaluates to 0. `&#39;balanced&#39;` </span>
+<span class="sd">            additionally takes into account how likely a point is to be observed in this </span>
+<span class="sd">            dataset. See our paper [2]_ for details.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        np.ndarray (2D)</span>
+<span class="sd">            Score (i,j) corresponds to data point D_i and input data label j. </span>
+
+<span class="sd">	References</span>
+<span class="sd">	----------</span>
+<span class="sd">        .. [1] Katharina Dost, Katerina Taskova, Patricia Riddle, and Jörg Wicker. </span>
+<span class="sd">           &quot;Your Best Guess When You Know Nothing: Identification and Mitigation of </span>
+<span class="sd">           Selection Bias.&quot; In: 2020 IEEE International Conference on Data Mining (ICDM), </span>
+<span class="sd">           pp. 996-1001, IEEE, 2020, ISSN: 2374-8486.</span>
+
+<span class="sd">        .. [2] Katharina Dost, Hamish Duncanson, Ioannis Ziogas, Patricia Riddle, and Jörg </span>
+<span class="sd">           Wicker. &quot;Divide and Imitate: Multi-Cluster Identification and Mitigation of </span>
+<span class="sd">           Selection Bias.&quot; In: Advances in Knowledge Discovery and Data Mining - 26th </span>
+<span class="sd">           Pacific-Asia Conference, PAKDD 2022. Lecture Notes in Computer Science, vol. </span>
+<span class="sd">           13281, pp. 149-160. Springer, Cham (2022).</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        &gt;&gt;&gt; from imitatebias.generators import *</span>
+<span class="sd">        &gt;&gt;&gt; from imitatebias.imitate import *</span>
+<span class="sd">        &gt;&gt;&gt; import matplotlib.pyplot as plt</span>
+
+<span class="sd">        Generate a dataset.</span>
+<span class="sd">        &gt;&gt;&gt; X, y = generateData(1000, 2, 2, seed=2210)</span>
+
+<span class="sd">        Generate a biased dataset.</span>
+<span class="sd">        &gt;&gt;&gt; X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)</span>
+
+<span class="sd">        initialize Imitate</span>
+<span class="sd">        &gt;&gt;&gt; imi = Imitate()</span>
+
+<span class="sd">        fit Imitate to the biased dataset</span>
+<span class="sd">        &gt;&gt;&gt; imi.fit(X_b, labels=y_b)</span>
+
+<span class="sd">        create some random points to score</span>
+<span class="sd">        &gt;&gt;&gt; rnd_points = np.column_stack((np.random.uniform(min(X[:,0]), max(X[:,0]), size=1000), \</span>
+<span class="sd">        &gt;&gt;&gt;                               np.random.uniform(min(X[:,1]), max(X[:,1]), size=1000)))</span>
+
+<span class="sd">        score the random points</span>
+<span class="sd">        &gt;&gt;&gt; scores_fill = imi.score(rnd_points, score_type=&#39;fill&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; scores_balanced = imi.score(rnd_points, score_type=&#39;balanced&#39;)</span>
+
+<span class="sd">        visualize data per cluster in ICA space</span>
+<span class="sd">        &gt;&gt;&gt; for l in np.unique(y_b):</span>
+<span class="sd">        &gt;&gt;&gt;     plt.scatter(rnd_points[:,0], rnd_points[:,1], c=scores_fill[:,int(l)])</span>
+<span class="sd">        &gt;&gt;&gt;     plt.title(&#39;Class &#39;+str(l)+&#39;; Score type = fill&#39;)</span>
+<span class="sd">        &gt;&gt;&gt;     plt.colorbar()</span>
+<span class="sd">        &gt;&gt;&gt;     plt.show()</span>
+
+<span class="sd">        &gt;&gt;&gt;     plt.scatter(rnd_points[:,0], rnd_points[:,1], c=scores_balanced[:,int(l)])</span>
+<span class="sd">        &gt;&gt;&gt;     plt.title(&#39;Class &#39;+str(l)+&#39;; Score type = balanced&#39;)</span>
+<span class="sd">        &gt;&gt;&gt;     plt.colorbar()</span>
+<span class="sd">        &gt;&gt;&gt;     plt.show()</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">scores</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">icas</span><span class="p">)))</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">l</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">labels</span><span class="p">)):</span> <span class="c1"># fill scores[:,i]</span>
+            <span class="n">data_trf</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">icas</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+            <span class="n">grids</span><span class="p">,</span> <span class="n">fitted</span><span class="p">,</span> <span class="n">fill_up</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">grids</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">fitted</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">fill_up</span><span class="p">[</span><span class="n">l</span><span class="p">]</span>
+
+            <span class="n">fitted_grid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">data_trf</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_trf</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span> <span class="c1"># points x dims</span>
+            <span class="n">fill_grid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">data_trf</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_trf</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span> <span class="c1"># points x dims</span>
+            <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data_trf</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+                <span class="c1"># organize in grid cells: 0 = smaller; len(grids[0]) = larger</span>
+                <span class="n">grid_dim</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">digitize</span><span class="p">(</span><span class="n">data_trf</span><span class="p">[:,</span><span class="n">d</span><span class="p">],</span> <span class="n">grids</span><span class="p">[</span><span class="n">d</span><span class="p">])</span> <span class="c1"># points x dims</span>
+                <span class="n">map_to_fitted</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vectorize</span><span class="p">(</span><span class="k">lambda</span> <span class="n">idx</span><span class="p">:</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">idx</span><span class="o">&lt;=</span><span class="mi">0</span> <span class="ow">or</span> <span class="n">idx</span><span class="o">&gt;=</span><span class="nb">len</span><span class="p">(</span><span class="n">grids</span><span class="p">[</span><span class="n">d</span><span class="p">])</span> <span class="k">else</span> <span class="n">fitted</span><span class="p">[</span><span class="n">d</span><span class="p">][</span><span class="n">idx</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+                <span class="n">map_to_fill</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vectorize</span><span class="p">(</span><span class="k">lambda</span> <span class="n">idx</span><span class="p">:</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">idx</span><span class="o">&lt;=</span><span class="mi">0</span> <span class="ow">or</span> <span class="n">idx</span><span class="o">&gt;=</span><span class="nb">len</span><span class="p">(</span><span class="n">grids</span><span class="p">[</span><span class="n">d</span><span class="p">])</span> <span class="k">else</span> <span class="n">fill_up</span><span class="p">[</span><span class="n">d</span><span class="p">][</span><span class="n">idx</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+                <span class="n">fitted_grid</span><span class="p">[:,</span> <span class="n">d</span><span class="p">]</span> <span class="o">=</span> <span class="n">map_to_fitted</span><span class="p">(</span><span class="n">grid_dim</span><span class="p">)</span>
+                <span class="n">fill_grid</span><span class="p">[:,</span> <span class="n">d</span><span class="p">]</span> <span class="o">=</span> <span class="n">map_to_fill</span><span class="p">(</span><span class="n">grid_dim</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">score_type</span> <span class="o">==</span> <span class="s1">&#39;fill&#39;</span><span class="p">:</span>
+                <span class="n">scores</span><span class="p">[:,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">fill_grid</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+                <span class="n">scores</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">prod</span><span class="p">(</span><span class="n">fitted_grid</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># 0 score for unprobable entries</span>
+            <span class="k">elif</span> <span class="n">score_type</span> <span class="o">==</span> <span class="s1">&#39;balanced&#39;</span><span class="p">:</span>           
+                <span class="n">s1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">fitted_grid</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># fitted distribution</span>
+                <span class="n">s2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">fill_grid</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>   <span class="c1"># fill_up</span>
+                <span class="n">scores</span><span class="p">[:,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_trf</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">*</span><span class="n">s2</span>   <span class="c1"># score as the sum of both (weighted?)</span>
+                <span class="n">scores</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">fill_grid</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># 0 score where we don&#39;t fill anything up</span>
+                <span class="n">scores</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">prod</span><span class="p">(</span><span class="n">fitted_grid</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># 0 score for unprobable entries</span>
+        <span class="k">return</span> <span class="n">scores</span>
+
+    <span class="k">def</span> <span class="nf">augment</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Augments the fitted dataset to mitigate its bias.</span>
+
+<span class="sd">        Generates points to mitigate the bias in the input dataset provided to the `fit` method.</span>
+<span class="sd">        The number of generated points per label is determined by `Imitate.num_fill_up`.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        numpy.ndarray (2D)</span>
+<span class="sd">            Generated points.</span>
+<span class="sd">        numpy.array (1D)</span>
+<span class="sd">            Corresponding labels.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        &gt;&gt;&gt; from imitatebias.generators import *</span>
+<span class="sd">        &gt;&gt;&gt; from imitatebias.imitate import *</span>
+<span class="sd">        &gt;&gt;&gt; import matplotlib.pyplot as plt</span>
+
+<span class="sd">        Generate a dataset.</span>
+<span class="sd">        &gt;&gt;&gt; X, y = generateData(1000, 2, 2, seed=2210)</span>
+
+<span class="sd">        Generate a biased dataset.</span>
+<span class="sd">        &gt;&gt;&gt; X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)</span>
+
+<span class="sd">        initialize Imitate</span>
+<span class="sd">        &gt;&gt;&gt; imi = Imitate()</span>
+
+<span class="sd">        fit Imitate to the biased dataset</span>
+<span class="sd">        &gt;&gt;&gt; imi.fit(X_b, labels=y_b)</span>
+
+<span class="sd">        augment the dataset</span>
+<span class="sd">        &gt;&gt;&gt; X_gen, y_gen = imi.augment()</span>
+
+<span class="sd">        visualize data per cluster in ICA space</span>
+<span class="sd">        &gt;&gt;&gt; plt.scatter(X_b[:,0], X_b[:,1], c=y_b)</span>
+<span class="sd">        &gt;&gt;&gt; plt.scatter(X_gen[:,0], X_gen[:,1], c=y_gen, edgecolors=&#39;red&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; plt.title(&#39;Dataset with generated points (red)&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; plt.show()</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">gen_points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span>
+        <span class="n">gen_labels</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">labels</span><span class="p">):</span>
+            <span class="n">num_fill_up</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_fill_up</span><span class="p">[</span><span class="n">l</span><span class="p">]</span>
+            <span class="n">num_gen</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">num_fill_up</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">num_gen</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="k">continue</span>
+            <span class="n">grids</span><span class="p">,</span> <span class="n">vals</span><span class="p">,</span> <span class="n">fitted</span><span class="p">,</span> <span class="n">fill_up</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">grids</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">vals</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">fitted</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">fill_up</span><span class="p">[</span><span class="n">l</span><span class="p">]</span>
+
+            <span class="n">points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="n">num_gen</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+            <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+                <span class="n">fill</span> <span class="o">=</span> <span class="n">fitted</span><span class="p">[</span><span class="n">d</span><span class="p">]</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">fitted</span><span class="p">[</span><span class="n">d</span><span class="p">])</span> <span class="o">*</span> <span class="p">(</span><span class="n">num_gen</span> <span class="o">-</span> <span class="n">num_fill_up</span><span class="p">[</span><span class="n">d</span><span class="p">])</span>  <span class="o">+</span>  <span class="n">fill_up</span><span class="p">[</span><span class="n">d</span><span class="p">]</span> <span class="c1">#mixed distr</span>
+                <span class="n">fill_cdf</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">fill</span><span class="p">)</span> <span class="o">/</span> <span class="n">num_gen</span>  <span class="c1">#normalize</span>
+
+                <span class="c1">#generate points according to the cdf</span>
+                <span class="n">vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">num_gen</span><span class="p">)</span>
+                <span class="n">val_bins</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">searchsorted</span><span class="p">(</span><span class="n">fill_cdf</span><span class="p">,</span> <span class="n">vals</span><span class="p">)</span>
+                <span class="n">coords</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">grids</span><span class="p">[</span><span class="n">d</span><span class="p">][</span><span class="n">val_bins</span><span class="p">[</span><span class="n">i</span><span class="p">]],</span> <span class="n">grids</span><span class="p">[</span><span class="n">d</span><span class="p">][</span><span class="n">val_bins</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span> 
+                                   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_gen</span><span class="p">)])</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">num_gen</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+                <span class="n">points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">points</span><span class="p">,</span> <span class="n">coords</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+            <span class="n">gen_points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">gen_points</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">icas</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">points</span><span class="p">)))</span>
+            <span class="n">gen_labels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">gen_labels</span><span class="p">,</span> <span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">*</span><span class="n">num_gen</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">gen_points</span><span class="p">,</span> <span class="n">gen_labels</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="imitatebias.imitate.Imitate.__init__" class="doc doc-heading">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Imitate Constructor.</p>
+
+      <details class="quote">
+        <summary>Source code in <code>imitatebias\imitate.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">286</span>
+<span class="normal">287</span>
+<span class="normal">288</span>
+<span class="normal">289</span>
+<span class="normal">290</span>
+<span class="normal">291</span>
+<span class="normal">292</span>
+<span class="normal">293</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Imitate Constructor.&quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">icas</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">grids</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">vals</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">fitted</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">fill_up</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">num_fill_up</span> <span class="o">=</span> <span class="p">{}</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="imitatebias.imitate.Imitate.augment" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">augment</span><span class="p">()</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Augments the fitted dataset to mitigate its bias.</p>
+<p>Generates points to mitigate the bias in the input dataset provided to the <code>fit</code> method.
+The number of generated points per label is determined by <code>Imitate.num_fill_up</code>.</p>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>numpy.ndarray (2D)</code>
+          </td>
+          <td><p>Generated points.</p></td>
+        </tr>
+        <tr>
+          <td>
+                <code>numpy.array (1D)</code>
+          </td>
+          <td><p>Corresponding labels.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">imitatebias.generators</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">imitatebias.imitate</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</code></pre></div>
+    <p>Generate a dataset.</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">generateData</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">2210</span><span class="p">)</span>
+</code></pre></div>
+    <p>Generate a biased dataset.</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">X_b</span><span class="p">,</span> <span class="n">y_b</span><span class="p">,</span> <span class="n">idcs_deleted</span> <span class="o">=</span> <span class="n">generateBias</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">2210</span><span class="p">)</span>
+</code></pre></div>
+    <p>initialize Imitate</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">imi</span> <span class="o">=</span> <span class="n">Imitate</span><span class="p">()</span>
+</code></pre></div>
+    <p>fit Imitate to the biased dataset</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">imi</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_b</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">y_b</span><span class="p">)</span>
+</code></pre></div>
+    <p>augment the dataset</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">X_gen</span><span class="p">,</span> <span class="n">y_gen</span> <span class="o">=</span> <span class="n">imi</span><span class="o">.</span><span class="n">augment</span><span class="p">()</span>
+</code></pre></div>
+    <p>visualize data per cluster in ICA space</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X_b</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">X_b</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">y_b</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X_gen</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">X_gen</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">y_gen</span><span class="p">,</span> <span class="n">edgecolors</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Dataset with generated points (red)&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>imitatebias\imitate.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">487</span>
+<span class="normal">488</span>
+<span class="normal">489</span>
+<span class="normal">490</span>
+<span class="normal">491</span>
+<span class="normal">492</span>
+<span class="normal">493</span>
+<span class="normal">494</span>
+<span class="normal">495</span>
+<span class="normal">496</span>
+<span class="normal">497</span>
+<span class="normal">498</span>
+<span class="normal">499</span>
+<span class="normal">500</span>
+<span class="normal">501</span>
+<span class="normal">502</span>
+<span class="normal">503</span>
+<span class="normal">504</span>
+<span class="normal">505</span>
+<span class="normal">506</span>
+<span class="normal">507</span>
+<span class="normal">508</span>
+<span class="normal">509</span>
+<span class="normal">510</span>
+<span class="normal">511</span>
+<span class="normal">512</span>
+<span class="normal">513</span>
+<span class="normal">514</span>
+<span class="normal">515</span>
+<span class="normal">516</span>
+<span class="normal">517</span>
+<span class="normal">518</span>
+<span class="normal">519</span>
+<span class="normal">520</span>
+<span class="normal">521</span>
+<span class="normal">522</span>
+<span class="normal">523</span>
+<span class="normal">524</span>
+<span class="normal">525</span>
+<span class="normal">526</span>
+<span class="normal">527</span>
+<span class="normal">528</span>
+<span class="normal">529</span>
+<span class="normal">530</span>
+<span class="normal">531</span>
+<span class="normal">532</span>
+<span class="normal">533</span>
+<span class="normal">534</span>
+<span class="normal">535</span>
+<span class="normal">536</span>
+<span class="normal">537</span>
+<span class="normal">538</span>
+<span class="normal">539</span>
+<span class="normal">540</span>
+<span class="normal">541</span>
+<span class="normal">542</span>
+<span class="normal">543</span>
+<span class="normal">544</span>
+<span class="normal">545</span>
+<span class="normal">546</span>
+<span class="normal">547</span>
+<span class="normal">548</span>
+<span class="normal">549</span>
+<span class="normal">550</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">augment</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Augments the fitted dataset to mitigate its bias.</span>
+
+<span class="sd">    Generates points to mitigate the bias in the input dataset provided to the `fit` method.</span>
+<span class="sd">    The number of generated points per label is determined by `Imitate.num_fill_up`.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    numpy.ndarray (2D)</span>
+<span class="sd">        Generated points.</span>
+<span class="sd">    numpy.array (1D)</span>
+<span class="sd">        Corresponding labels.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; from imitatebias.generators import *</span>
+<span class="sd">    &gt;&gt;&gt; from imitatebias.imitate import *</span>
+<span class="sd">    &gt;&gt;&gt; import matplotlib.pyplot as plt</span>
+
+<span class="sd">    Generate a dataset.</span>
+<span class="sd">    &gt;&gt;&gt; X, y = generateData(1000, 2, 2, seed=2210)</span>
+
+<span class="sd">    Generate a biased dataset.</span>
+<span class="sd">    &gt;&gt;&gt; X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)</span>
+
+<span class="sd">    initialize Imitate</span>
+<span class="sd">    &gt;&gt;&gt; imi = Imitate()</span>
+
+<span class="sd">    fit Imitate to the biased dataset</span>
+<span class="sd">    &gt;&gt;&gt; imi.fit(X_b, labels=y_b)</span>
+
+<span class="sd">    augment the dataset</span>
+<span class="sd">    &gt;&gt;&gt; X_gen, y_gen = imi.augment()</span>
+
+<span class="sd">    visualize data per cluster in ICA space</span>
+<span class="sd">    &gt;&gt;&gt; plt.scatter(X_b[:,0], X_b[:,1], c=y_b)</span>
+<span class="sd">    &gt;&gt;&gt; plt.scatter(X_gen[:,0], X_gen[:,1], c=y_gen, edgecolors=&#39;red&#39;)</span>
+<span class="sd">    &gt;&gt;&gt; plt.title(&#39;Dataset with generated points (red)&#39;)</span>
+<span class="sd">    &gt;&gt;&gt; plt.show()</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">gen_points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span>
+    <span class="n">gen_labels</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">labels</span><span class="p">):</span>
+        <span class="n">num_fill_up</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_fill_up</span><span class="p">[</span><span class="n">l</span><span class="p">]</span>
+        <span class="n">num_gen</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">num_fill_up</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">num_gen</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="k">continue</span>
+        <span class="n">grids</span><span class="p">,</span> <span class="n">vals</span><span class="p">,</span> <span class="n">fitted</span><span class="p">,</span> <span class="n">fill_up</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">grids</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">vals</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">fitted</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">fill_up</span><span class="p">[</span><span class="n">l</span><span class="p">]</span>
+
+        <span class="n">points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="n">num_gen</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+            <span class="n">fill</span> <span class="o">=</span> <span class="n">fitted</span><span class="p">[</span><span class="n">d</span><span class="p">]</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">fitted</span><span class="p">[</span><span class="n">d</span><span class="p">])</span> <span class="o">*</span> <span class="p">(</span><span class="n">num_gen</span> <span class="o">-</span> <span class="n">num_fill_up</span><span class="p">[</span><span class="n">d</span><span class="p">])</span>  <span class="o">+</span>  <span class="n">fill_up</span><span class="p">[</span><span class="n">d</span><span class="p">]</span> <span class="c1">#mixed distr</span>
+            <span class="n">fill_cdf</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">fill</span><span class="p">)</span> <span class="o">/</span> <span class="n">num_gen</span>  <span class="c1">#normalize</span>
+
+            <span class="c1">#generate points according to the cdf</span>
+            <span class="n">vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">num_gen</span><span class="p">)</span>
+            <span class="n">val_bins</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">searchsorted</span><span class="p">(</span><span class="n">fill_cdf</span><span class="p">,</span> <span class="n">vals</span><span class="p">)</span>
+            <span class="n">coords</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">grids</span><span class="p">[</span><span class="n">d</span><span class="p">][</span><span class="n">val_bins</span><span class="p">[</span><span class="n">i</span><span class="p">]],</span> <span class="n">grids</span><span class="p">[</span><span class="n">d</span><span class="p">][</span><span class="n">val_bins</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span> 
+                               <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_gen</span><span class="p">)])</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">num_gen</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+            <span class="n">points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">points</span><span class="p">,</span> <span class="n">coords</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="n">gen_points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">gen_points</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">icas</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">points</span><span class="p">)))</span>
+        <span class="n">gen_labels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">gen_labels</span><span class="p">,</span> <span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">*</span><span class="n">num_gen</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">gen_points</span><span class="p">,</span> <span class="n">gen_labels</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="imitatebias.imitate.Imitate.fit" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">fit</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="p">[],</span> <span class="n">bounds</span><span class="o">=</span><span class="p">{},</span> <span class="n">bounds_set</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">strength</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Fits a bias-aware multivariate Gaussian per label to the data.</p>
+<p>Given a dataset and a potential label array, Imitate splits the data per 
+class and operates on each subset individually. For each of those labels, 
+fit fits a multivariate Gaussian to the subset that accounts for potential 
+biases. See our paper [1]_ for details.
+Custom borders can be defined that constrain the fitting process. The strength
+parameter controls how strongly these borders are enforced (the non-bounded
+version uses <code>strength=1</code>).</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>data</code></td>
+          <td>
+                <code>numpy.ndarray (2D)</code>
+          </td>
+          <td><p>Potentially biased input dataset.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>labels</code></td>
+          <td>
+                <code>numpy.array (1D), optional</code>
+          </td>
+          <td><p>Labels corresponding to the dataset if available.</p></td>
+          <td>
+                <code>[]</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>bounds</code></td>
+          <td>
+                <code>dict(string or int or float</code>
+          </td>
+          <td><p>Bounds Imitate if provided, for each label, in the shape 
+<code>[[min_0, max_0], ..., [min_d, max_d]]</code>
+for d dimensions. Use a <code>dictionary</code> to map each label to its correct
+bounds.</p></td>
+          <td>
+                <code>{}</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>bounds_set</code></td>
+          <td>
+                <code>numpy.ndarray (2D)</code>
+          </td>
+          <td><p>If Imitate should be bounded to the ranges of a certain dataset, this set
+can be passed to it directly. Will be overwritten by <code>bounds</code> if specified.</p></td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>strength</code></td>
+          <td>
+                <code>int, default</code>
+          </td>
+          <td><p>Controls how strongly the bounds are enforced. Will be ignored if no
+bounds are specified.</p></td>
+          <td>
+                <code>1000</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+      <h5 id="imitatebias.imitate.Imitate.fit--references">References</h5>
+<p>.. [1] Katharina Dost, Katerina Taskova, Patricia Riddle, and Jörg Wicker. 
+   "Your Best Guess When You Know Nothing: Identification and Mitigation of 
+   Selection Bias." In: 2020 IEEE International Conference on Data Mining (ICDM), 
+   pp. 996-1001, IEEE, 2020, ISSN: 2374-8486.</p>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">imitatebias.generators</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">imitatebias.imitate</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</code></pre></div>
+    <p>Generate a dataset.</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">generateData</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">2210</span><span class="p">)</span>
+</code></pre></div>
+    <p>Generate a biased dataset.</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">X_b</span><span class="p">,</span> <span class="n">y_b</span><span class="p">,</span> <span class="n">idcs_deleted</span> <span class="o">=</span> <span class="n">generateBias</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">2210</span><span class="p">)</span>
+</code></pre></div>
+    <p>initialize Imitate</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">imi</span> <span class="o">=</span> <span class="n">Imitate</span><span class="p">()</span>
+</code></pre></div>
+    <p>fit Imitate to the biased dataset</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">imi</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_b</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">y_b</span><span class="p">)</span>
+</code></pre></div>
+    <p>visualize data per cluster in ICA space</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">y_b</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">data_transformed</span> <span class="o">=</span> <span class="n">imi</span><span class="o">.</span><span class="n">icas</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_b</span><span class="p">[</span><span class="n">y_b</span> <span class="o">==</span> <span class="n">l</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">data_transformed</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">data_transformed</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Class &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">l</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>imitatebias\imitate.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">295</span>
+<span class="normal">296</span>
+<span class="normal">297</span>
+<span class="normal">298</span>
+<span class="normal">299</span>
+<span class="normal">300</span>
+<span class="normal">301</span>
+<span class="normal">302</span>
+<span class="normal">303</span>
+<span class="normal">304</span>
+<span class="normal">305</span>
+<span class="normal">306</span>
+<span class="normal">307</span>
+<span class="normal">308</span>
+<span class="normal">309</span>
+<span class="normal">310</span>
+<span class="normal">311</span>
+<span class="normal">312</span>
+<span class="normal">313</span>
+<span class="normal">314</span>
+<span class="normal">315</span>
+<span class="normal">316</span>
+<span class="normal">317</span>
+<span class="normal">318</span>
+<span class="normal">319</span>
+<span class="normal">320</span>
+<span class="normal">321</span>
+<span class="normal">322</span>
+<span class="normal">323</span>
+<span class="normal">324</span>
+<span class="normal">325</span>
+<span class="normal">326</span>
+<span class="normal">327</span>
+<span class="normal">328</span>
+<span class="normal">329</span>
+<span class="normal">330</span>
+<span class="normal">331</span>
+<span class="normal">332</span>
+<span class="normal">333</span>
+<span class="normal">334</span>
+<span class="normal">335</span>
+<span class="normal">336</span>
+<span class="normal">337</span>
+<span class="normal">338</span>
+<span class="normal">339</span>
+<span class="normal">340</span>
+<span class="normal">341</span>
+<span class="normal">342</span>
+<span class="normal">343</span>
+<span class="normal">344</span>
+<span class="normal">345</span>
+<span class="normal">346</span>
+<span class="normal">347</span>
+<span class="normal">348</span>
+<span class="normal">349</span>
+<span class="normal">350</span>
+<span class="normal">351</span>
+<span class="normal">352</span>
+<span class="normal">353</span>
+<span class="normal">354</span>
+<span class="normal">355</span>
+<span class="normal">356</span>
+<span class="normal">357</span>
+<span class="normal">358</span>
+<span class="normal">359</span>
+<span class="normal">360</span>
+<span class="normal">361</span>
+<span class="normal">362</span>
+<span class="normal">363</span>
+<span class="normal">364</span>
+<span class="normal">365</span>
+<span class="normal">366</span>
+<span class="normal">367</span>
+<span class="normal">368</span>
+<span class="normal">369</span>
+<span class="normal">370</span>
+<span class="normal">371</span>
+<span class="normal">372</span>
+<span class="normal">373</span>
+<span class="normal">374</span>
+<span class="normal">375</span>
+<span class="normal">376</span>
+<span class="normal">377</span>
+<span class="normal">378</span>
+<span class="normal">379</span>
+<span class="normal">380</span>
+<span class="normal">381</span>
+<span class="normal">382</span>
+<span class="normal">383</span>
+<span class="normal">384</span></pre></div></td><td class="code"><div><pre><span></span><code>    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="p">[],</span> <span class="n">bounds</span><span class="o">=</span><span class="p">{},</span> <span class="n">bounds_set</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">strength</span><span class="o">=</span><span class="mi">1000</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Fits a bias-aware multivariate Gaussian per label to the data.</span>
+
+<span class="sd">        Given a dataset and a potential label array, Imitate splits the data per </span>
+<span class="sd">        class and operates on each subset individually. For each of those labels, </span>
+<span class="sd">        fit fits a multivariate Gaussian to the subset that accounts for potential </span>
+<span class="sd">        biases. See our paper [1]_ for details.</span>
+<span class="sd">        Custom borders can be defined that constrain the fitting process. The strength</span>
+<span class="sd">        parameter controls how strongly these borders are enforced (the non-bounded</span>
+<span class="sd">        version uses `strength=1`).</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        data : numpy.ndarray (2D)</span>
+<span class="sd">            Potentially biased input dataset.</span>
+<span class="sd">        labels : numpy.array (1D), optional</span>
+<span class="sd">            Labels corresponding to the dataset if available.</span>
+<span class="sd">        bounds : dict(string or int or float: numpy.ndarray (2D)), optional</span>
+<span class="sd">            Bounds Imitate if provided, for each label, in the shape </span>
+<span class="sd">            ``[[min_0, max_0], ..., [min_d, max_d]]``</span>
+<span class="sd">            for d dimensions. Use a `dictionary` to map each label to its correct</span>
+<span class="sd">            bounds.</span>
+<span class="sd">        bounds_set : numpy.ndarray (2D)</span>
+<span class="sd">            If Imitate should be bounded to the ranges of a certain dataset, this set</span>
+<span class="sd">            can be passed to it directly. Will be overwritten by `bounds` if specified.</span>
+<span class="sd">        strength : int, default=1000</span>
+<span class="sd">            Controls how strongly the bounds are enforced. Will be ignored if no</span>
+<span class="sd">            bounds are specified.</span>
+
+<span class="sd">	References</span>
+<span class="sd">	----------</span>
+<span class="sd">	.. [1] Katharina Dost, Katerina Taskova, Patricia Riddle, and Jörg Wicker. </span>
+<span class="sd">           &quot;Your Best Guess When You Know Nothing: Identification and Mitigation of </span>
+<span class="sd">           Selection Bias.&quot; In: 2020 IEEE International Conference on Data Mining (ICDM), </span>
+<span class="sd">           pp. 996-1001, IEEE, 2020, ISSN: 2374-8486.</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        &gt;&gt;&gt; from imitatebias.generators import *</span>
+<span class="sd">        &gt;&gt;&gt; from imitatebias.imitate import *</span>
+<span class="sd">        &gt;&gt;&gt; import matplotlib.pyplot as plt</span>
+
+<span class="sd">        Generate a dataset.</span>
+<span class="sd">        &gt;&gt;&gt; X, y = generateData(1000, 2, 2, seed=2210)</span>
+
+<span class="sd">        Generate a biased dataset.</span>
+<span class="sd">        &gt;&gt;&gt; X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)</span>
+
+<span class="sd">        initialize Imitate</span>
+<span class="sd">        &gt;&gt;&gt; imi = Imitate()</span>
+
+<span class="sd">        fit Imitate to the biased dataset</span>
+<span class="sd">        &gt;&gt;&gt; imi.fit(X_b, labels=y_b)</span>
+
+<span class="sd">        visualize data per cluster in ICA space</span>
+<span class="sd">        &gt;&gt;&gt; for l in np.unique(y_b):</span>
+<span class="sd">        &gt;&gt;&gt;     data_transformed = imi.icas[l].transform(X_b[y_b == l])</span>
+<span class="sd">        &gt;&gt;&gt;     plt.scatter(data_transformed[:,0], data_transformed[:,1])</span>
+<span class="sd">        &gt;&gt;&gt;     plt.title(&#39;Class &#39;+str(l))</span>
+<span class="sd">        &gt;&gt;&gt;     plt.show()</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">labels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">))</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span> <span class="k">else</span> <span class="n">labels</span>
+        <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">labels</span><span class="p">):</span>
+            <span class="n">d</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">labels</span> <span class="o">==</span> <span class="n">l</span><span class="p">]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">icas</span><span class="p">[</span><span class="n">l</span><span class="p">]</span> <span class="o">=</span> <span class="n">FastICA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">whiten</span><span class="o">=</span><span class="s1">&#39;arbitrary-variance&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">icas</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+            <span class="n">d_trf</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">icas</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">bounds</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">b</span> <span class="o">=</span> <span class="n">bounds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">bounds</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span> <span class="k">else</span> <span class="kc">None</span>            
+                <span class="n">p_gen</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">column_stack</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">*</span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="mi">1000</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">]))])</span>            
+                <span class="n">p_trf</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ica</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">p_gen</span><span class="p">)</span>
+                <span class="n">bounds_trf</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">p_trf</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">p_trf</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)))</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+                <span class="n">range_trf</span> <span class="o">=</span> <span class="n">bounds_trf</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">bounds_trf</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+                <span class="n">bounds_relaxed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">bounds_trf</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mf">0.1</span><span class="o">*</span><span class="n">range_trf</span><span class="p">,</span> <span class="n">bounds_trf</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mf">0.1</span><span class="o">*</span><span class="n">range_trf</span><span class="p">))</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+
+                <span class="bp">self</span><span class="o">.</span><span class="n">grids</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">vals</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">fitted</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">fill_up</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_fill_up</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">run_imitate</span><span class="p">(</span>
+                    <span class="n">d_trf</span><span class="p">,</span> <span class="n">bounds</span><span class="o">=</span><span class="n">bounds_relaxed</span><span class="p">,</span> <span class="n">strength</span><span class="o">=</span><span class="n">strength</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">bounds_set</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">p_trf</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ica</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">bounds_set</span><span class="p">)</span>
+                <span class="n">bounds_trf</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">p_trf</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">p_trf</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)))</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+                <span class="n">range_trf</span> <span class="o">=</span> <span class="n">bounds_trf</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">bounds_trf</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+                <span class="n">bounds_relaxed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">bounds_trf</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mf">0.1</span><span class="o">*</span><span class="n">range_trf</span><span class="p">,</span> <span class="n">bounds_trf</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mf">0.1</span><span class="o">*</span><span class="n">range_trf</span><span class="p">))</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+
+                <span class="bp">self</span><span class="o">.</span><span class="n">grids</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">vals</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">fitted</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">fill_up</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_fill_up</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">run_imitate</span><span class="p">(</span>
+                    <span class="n">d_trf</span><span class="p">,</span> <span class="n">bounds</span><span class="o">=</span><span class="n">bounds_relaxed</span><span class="p">,</span> <span class="n">strength</span><span class="o">=</span><span class="n">strength</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">grids</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">vals</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">fitted</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">fill_up</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_fill_up</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">run_imitate</span><span class="p">(</span>
+                    <span class="n">d_trf</span><span class="p">,</span> <span class="n">bounds</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">strength</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="imitatebias.imitate.Imitate.score" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">score</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">score_type</span><span class="o">=</span><span class="s1">&#39;fill&#39;</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Scores new data based on Imitate's fitted Gaussian.</p>
+<p>Imitate fits one multivariate Gaussian per label in a dataset. Scores are 
+obtained via the difference of those Gaussians' PDFs and the input data
+(represented via a KDE estimate). See our paper [1]_ for details.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>data</code></td>
+          <td>
+                <code>numpy.ndarray (2D)</code>
+          </td>
+          <td><p>Data that shall be scored. This dataset does not need to match the input data,
+but it is required to have the same dimensionality.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>score_type</code></td>
+          <td>
+          </td>
+          <td><p>Selects the type of score. <code>'fill'</code> measures how well a data points fills in
+the identified bias, i.e., it quantifies the difference between the fitted
+and the observed dataset distribution. The score is set to 0 if the 3-std-
+truncated fitted Gaussian's PDF at this point evaluates to 0. <code>'balanced'</code> 
+additionally takes into account how likely a point is to be observed in this 
+dataset. See our paper [2]_ for details.</p></td>
+          <td>
+                <code>&#39;fill&#39;</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>np.ndarray (2D)</code>
+          </td>
+          <td><p>Score (i,j) corresponds to data point D_i and input data label j. </p></td>
+        </tr>
+    </tbody>
+  </table>
+      <h5 id="imitatebias.imitate.Imitate.score--references">References</h5>
+<p>.. [1] Katharina Dost, Katerina Taskova, Patricia Riddle, and Jörg Wicker. 
+   "Your Best Guess When You Know Nothing: Identification and Mitigation of 
+   Selection Bias." In: 2020 IEEE International Conference on Data Mining (ICDM), 
+   pp. 996-1001, IEEE, 2020, ISSN: 2374-8486.</p>
+<p>.. [2] Katharina Dost, Hamish Duncanson, Ioannis Ziogas, Patricia Riddle, and Jörg 
+   Wicker. "Divide and Imitate: Multi-Cluster Identification and Mitigation of 
+   Selection Bias." In: Advances in Knowledge Discovery and Data Mining - 26th 
+   Pacific-Asia Conference, PAKDD 2022. Lecture Notes in Computer Science, vol. 
+   13281, pp. 149-160. Springer, Cham (2022).</p>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">imitatebias.generators</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">imitatebias.imitate</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</code></pre></div>
+    <p>Generate a dataset.</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">generateData</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">2210</span><span class="p">)</span>
+</code></pre></div>
+    <p>Generate a biased dataset.</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">X_b</span><span class="p">,</span> <span class="n">y_b</span><span class="p">,</span> <span class="n">idcs_deleted</span> <span class="o">=</span> <span class="n">generateBias</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">2210</span><span class="p">)</span>
+</code></pre></div>
+    <p>initialize Imitate</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">imi</span> <span class="o">=</span> <span class="n">Imitate</span><span class="p">()</span>
+</code></pre></div>
+    <p>fit Imitate to the biased dataset</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">imi</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_b</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">y_b</span><span class="p">)</span>
+</code></pre></div>
+    <p>create some random points to score</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">rnd_points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">column_stack</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">max</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]),</span> <span class="n">size</span><span class="o">=</span><span class="mi">1000</span><span class="p">),</span>         <span class="o">&gt;&gt;&gt;</span>                               <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]),</span> <span class="nb">max</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]),</span> <span class="n">size</span><span class="o">=</span><span class="mi">1000</span><span class="p">)))</span>
+</code></pre></div>
+    <p>score the random points</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">scores_fill</span> <span class="o">=</span> <span class="n">imi</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">rnd_points</span><span class="p">,</span> <span class="n">score_type</span><span class="o">=</span><span class="s1">&#39;fill&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">scores_balanced</span> <span class="o">=</span> <span class="n">imi</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">rnd_points</span><span class="p">,</span> <span class="n">score_type</span><span class="o">=</span><span class="s1">&#39;balanced&#39;</span><span class="p">)</span>
+</code></pre></div>
+    <p>visualize data per cluster in ICA space</p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">y_b</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">rnd_points</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">rnd_points</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">scores_fill</span><span class="p">[:,</span><span class="nb">int</span><span class="p">(</span><span class="n">l</span><span class="p">)])</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Class &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;; Score type = fill&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">rnd_points</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">rnd_points</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">scores_balanced</span><span class="p">[:,</span><span class="nb">int</span><span class="p">(</span><span class="n">l</span><span class="p">)])</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Class &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;; Score type = balanced&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>imitatebias\imitate.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">386</span>
+<span class="normal">387</span>
+<span class="normal">388</span>
+<span class="normal">389</span>
+<span class="normal">390</span>
+<span class="normal">391</span>
+<span class="normal">392</span>
+<span class="normal">393</span>
+<span class="normal">394</span>
+<span class="normal">395</span>
+<span class="normal">396</span>
+<span class="normal">397</span>
+<span class="normal">398</span>
+<span class="normal">399</span>
+<span class="normal">400</span>
+<span class="normal">401</span>
+<span class="normal">402</span>
+<span class="normal">403</span>
+<span class="normal">404</span>
+<span class="normal">405</span>
+<span class="normal">406</span>
+<span class="normal">407</span>
+<span class="normal">408</span>
+<span class="normal">409</span>
+<span class="normal">410</span>
+<span class="normal">411</span>
+<span class="normal">412</span>
+<span class="normal">413</span>
+<span class="normal">414</span>
+<span class="normal">415</span>
+<span class="normal">416</span>
+<span class="normal">417</span>
+<span class="normal">418</span>
+<span class="normal">419</span>
+<span class="normal">420</span>
+<span class="normal">421</span>
+<span class="normal">422</span>
+<span class="normal">423</span>
+<span class="normal">424</span>
+<span class="normal">425</span>
+<span class="normal">426</span>
+<span class="normal">427</span>
+<span class="normal">428</span>
+<span class="normal">429</span>
+<span class="normal">430</span>
+<span class="normal">431</span>
+<span class="normal">432</span>
+<span class="normal">433</span>
+<span class="normal">434</span>
+<span class="normal">435</span>
+<span class="normal">436</span>
+<span class="normal">437</span>
+<span class="normal">438</span>
+<span class="normal">439</span>
+<span class="normal">440</span>
+<span class="normal">441</span>
+<span class="normal">442</span>
+<span class="normal">443</span>
+<span class="normal">444</span>
+<span class="normal">445</span>
+<span class="normal">446</span>
+<span class="normal">447</span>
+<span class="normal">448</span>
+<span class="normal">449</span>
+<span class="normal">450</span>
+<span class="normal">451</span>
+<span class="normal">452</span>
+<span class="normal">453</span>
+<span class="normal">454</span>
+<span class="normal">455</span>
+<span class="normal">456</span>
+<span class="normal">457</span>
+<span class="normal">458</span>
+<span class="normal">459</span>
+<span class="normal">460</span>
+<span class="normal">461</span>
+<span class="normal">462</span>
+<span class="normal">463</span>
+<span class="normal">464</span>
+<span class="normal">465</span>
+<span class="normal">466</span>
+<span class="normal">467</span>
+<span class="normal">468</span>
+<span class="normal">469</span>
+<span class="normal">470</span>
+<span class="normal">471</span>
+<span class="normal">472</span>
+<span class="normal">473</span>
+<span class="normal">474</span>
+<span class="normal">475</span>
+<span class="normal">476</span>
+<span class="normal">477</span>
+<span class="normal">478</span>
+<span class="normal">479</span>
+<span class="normal">480</span>
+<span class="normal">481</span>
+<span class="normal">482</span>
+<span class="normal">483</span>
+<span class="normal">484</span>
+<span class="normal">485</span></pre></div></td><td class="code"><div><pre><span></span><code>    <span class="k">def</span> <span class="nf">score</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">score_type</span><span class="o">=</span><span class="s1">&#39;fill&#39;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Scores new data based on Imitate&#39;s fitted Gaussian.</span>
+
+<span class="sd">        Imitate fits one multivariate Gaussian per label in a dataset. Scores are </span>
+<span class="sd">        obtained via the difference of those Gaussians&#39; PDFs and the input data</span>
+<span class="sd">        (represented via a KDE estimate). See our paper [1]_ for details.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        data : numpy.ndarray (2D)</span>
+<span class="sd">            Data that shall be scored. This dataset does not need to match the input data,</span>
+<span class="sd">            but it is required to have the same dimensionality.</span>
+<span class="sd">        score_type : {&#39;fill&#39;, &#39;balanced&#39;}, default=&#39;fill&#39;</span>
+<span class="sd">            Selects the type of score. `&#39;fill&#39;` measures how well a data points fills in</span>
+<span class="sd">            the identified bias, i.e., it quantifies the difference between the fitted</span>
+<span class="sd">            and the observed dataset distribution. The score is set to 0 if the 3-std-</span>
+<span class="sd">            truncated fitted Gaussian&#39;s PDF at this point evaluates to 0. `&#39;balanced&#39;` </span>
+<span class="sd">            additionally takes into account how likely a point is to be observed in this </span>
+<span class="sd">            dataset. See our paper [2]_ for details.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        np.ndarray (2D)</span>
+<span class="sd">            Score (i,j) corresponds to data point D_i and input data label j. </span>
+
+<span class="sd">	References</span>
+<span class="sd">	----------</span>
+<span class="sd">        .. [1] Katharina Dost, Katerina Taskova, Patricia Riddle, and Jörg Wicker. </span>
+<span class="sd">           &quot;Your Best Guess When You Know Nothing: Identification and Mitigation of </span>
+<span class="sd">           Selection Bias.&quot; In: 2020 IEEE International Conference on Data Mining (ICDM), </span>
+<span class="sd">           pp. 996-1001, IEEE, 2020, ISSN: 2374-8486.</span>
+
+<span class="sd">        .. [2] Katharina Dost, Hamish Duncanson, Ioannis Ziogas, Patricia Riddle, and Jörg </span>
+<span class="sd">           Wicker. &quot;Divide and Imitate: Multi-Cluster Identification and Mitigation of </span>
+<span class="sd">           Selection Bias.&quot; In: Advances in Knowledge Discovery and Data Mining - 26th </span>
+<span class="sd">           Pacific-Asia Conference, PAKDD 2022. Lecture Notes in Computer Science, vol. </span>
+<span class="sd">           13281, pp. 149-160. Springer, Cham (2022).</span>
+
+<span class="sd">        Examples</span>
+<span class="sd">        --------</span>
+<span class="sd">        &gt;&gt;&gt; from imitatebias.generators import *</span>
+<span class="sd">        &gt;&gt;&gt; from imitatebias.imitate import *</span>
+<span class="sd">        &gt;&gt;&gt; import matplotlib.pyplot as plt</span>
+
+<span class="sd">        Generate a dataset.</span>
+<span class="sd">        &gt;&gt;&gt; X, y = generateData(1000, 2, 2, seed=2210)</span>
+
+<span class="sd">        Generate a biased dataset.</span>
+<span class="sd">        &gt;&gt;&gt; X_b, y_b, idcs_deleted = generateBias(X, y, 1, seed=2210)</span>
+
+<span class="sd">        initialize Imitate</span>
+<span class="sd">        &gt;&gt;&gt; imi = Imitate()</span>
+
+<span class="sd">        fit Imitate to the biased dataset</span>
+<span class="sd">        &gt;&gt;&gt; imi.fit(X_b, labels=y_b)</span>
+
+<span class="sd">        create some random points to score</span>
+<span class="sd">        &gt;&gt;&gt; rnd_points = np.column_stack((np.random.uniform(min(X[:,0]), max(X[:,0]), size=1000), \</span>
+<span class="sd">        &gt;&gt;&gt;                               np.random.uniform(min(X[:,1]), max(X[:,1]), size=1000)))</span>
+
+<span class="sd">        score the random points</span>
+<span class="sd">        &gt;&gt;&gt; scores_fill = imi.score(rnd_points, score_type=&#39;fill&#39;)</span>
+<span class="sd">        &gt;&gt;&gt; scores_balanced = imi.score(rnd_points, score_type=&#39;balanced&#39;)</span>
+
+<span class="sd">        visualize data per cluster in ICA space</span>
+<span class="sd">        &gt;&gt;&gt; for l in np.unique(y_b):</span>
+<span class="sd">        &gt;&gt;&gt;     plt.scatter(rnd_points[:,0], rnd_points[:,1], c=scores_fill[:,int(l)])</span>
+<span class="sd">        &gt;&gt;&gt;     plt.title(&#39;Class &#39;+str(l)+&#39;; Score type = fill&#39;)</span>
+<span class="sd">        &gt;&gt;&gt;     plt.colorbar()</span>
+<span class="sd">        &gt;&gt;&gt;     plt.show()</span>
+
+<span class="sd">        &gt;&gt;&gt;     plt.scatter(rnd_points[:,0], rnd_points[:,1], c=scores_balanced[:,int(l)])</span>
+<span class="sd">        &gt;&gt;&gt;     plt.title(&#39;Class &#39;+str(l)+&#39;; Score type = balanced&#39;)</span>
+<span class="sd">        &gt;&gt;&gt;     plt.colorbar()</span>
+<span class="sd">        &gt;&gt;&gt;     plt.show()</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">scores</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">icas</span><span class="p">)))</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">l</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">labels</span><span class="p">)):</span> <span class="c1"># fill scores[:,i]</span>
+            <span class="n">data_trf</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">icas</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+            <span class="n">grids</span><span class="p">,</span> <span class="n">fitted</span><span class="p">,</span> <span class="n">fill_up</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">grids</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">fitted</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">fill_up</span><span class="p">[</span><span class="n">l</span><span class="p">]</span>
+
+            <span class="n">fitted_grid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">data_trf</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_trf</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span> <span class="c1"># points x dims</span>
+            <span class="n">fill_grid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">data_trf</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_trf</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span> <span class="c1"># points x dims</span>
+            <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data_trf</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+                <span class="c1"># organize in grid cells: 0 = smaller; len(grids[0]) = larger</span>
+                <span class="n">grid_dim</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">digitize</span><span class="p">(</span><span class="n">data_trf</span><span class="p">[:,</span><span class="n">d</span><span class="p">],</span> <span class="n">grids</span><span class="p">[</span><span class="n">d</span><span class="p">])</span> <span class="c1"># points x dims</span>
+                <span class="n">map_to_fitted</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vectorize</span><span class="p">(</span><span class="k">lambda</span> <span class="n">idx</span><span class="p">:</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">idx</span><span class="o">&lt;=</span><span class="mi">0</span> <span class="ow">or</span> <span class="n">idx</span><span class="o">&gt;=</span><span class="nb">len</span><span class="p">(</span><span class="n">grids</span><span class="p">[</span><span class="n">d</span><span class="p">])</span> <span class="k">else</span> <span class="n">fitted</span><span class="p">[</span><span class="n">d</span><span class="p">][</span><span class="n">idx</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+                <span class="n">map_to_fill</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vectorize</span><span class="p">(</span><span class="k">lambda</span> <span class="n">idx</span><span class="p">:</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">idx</span><span class="o">&lt;=</span><span class="mi">0</span> <span class="ow">or</span> <span class="n">idx</span><span class="o">&gt;=</span><span class="nb">len</span><span class="p">(</span><span class="n">grids</span><span class="p">[</span><span class="n">d</span><span class="p">])</span> <span class="k">else</span> <span class="n">fill_up</span><span class="p">[</span><span class="n">d</span><span class="p">][</span><span class="n">idx</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+                <span class="n">fitted_grid</span><span class="p">[:,</span> <span class="n">d</span><span class="p">]</span> <span class="o">=</span> <span class="n">map_to_fitted</span><span class="p">(</span><span class="n">grid_dim</span><span class="p">)</span>
+                <span class="n">fill_grid</span><span class="p">[:,</span> <span class="n">d</span><span class="p">]</span> <span class="o">=</span> <span class="n">map_to_fill</span><span class="p">(</span><span class="n">grid_dim</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">score_type</span> <span class="o">==</span> <span class="s1">&#39;fill&#39;</span><span class="p">:</span>
+                <span class="n">scores</span><span class="p">[:,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">fill_grid</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+                <span class="n">scores</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">prod</span><span class="p">(</span><span class="n">fitted_grid</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># 0 score for unprobable entries</span>
+            <span class="k">elif</span> <span class="n">score_type</span> <span class="o">==</span> <span class="s1">&#39;balanced&#39;</span><span class="p">:</span>           
+                <span class="n">s1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">fitted_grid</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># fitted distribution</span>
+                <span class="n">s2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">fill_grid</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>   <span class="c1"># fill_up</span>
+                <span class="n">scores</span><span class="p">[:,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_trf</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">*</span><span class="n">s2</span>   <span class="c1"># score as the sum of both (weighted?)</span>
+                <span class="n">scores</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">fill_grid</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># 0 score where we don&#39;t fill anything up</span>
+                <span class="n">scores</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">prod</span><span class="p">(</span><span class="n">fitted_grid</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># 0 score for unprobable entries</span>
+        <span class="k">return</span> <span class="n">scores</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../mimic/" class="md-footer__link md-footer__link--next" aria-label="Next: Mimic" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Mimic
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.078830c0.min.js"></script>
+      
+    
+  </body>
+</html>
