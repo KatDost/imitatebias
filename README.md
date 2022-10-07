@@ -65,7 +65,12 @@ doi       = {10.1007/978-3-031-05936-0\_12},
 }
 ```
 
-If you would like to use and cite CANCELS in your publication, please stay tuned -- we are working on publishing it! In the meanwhile, we would appreciate a citation for our IMITATE paper.
+If you would like to use and cite CANCELS in your publication, please stay tuned -- we are working on publishing it! In the meanwhile, we would appreciate a citation for our IMITATE paper or the preprint:
+```
+Katharina Dost, Zac Pullar-Strecker, Liam Brydon, Kunyang Zhang, Jasmin Hafner, Patricia Riddle, and Jörg Wicker.
+"Combatting Over-Specialization Bias in Growing Chemical Databases."
+05 October 2022, PREPRINT (Version 1) available at Research Square [https://doi.org/10.21203/rs.3.rs-2133331/v1]
+```
 
 # Further Information
 If you would like more information on our projects, please have a look at the individual repositories for [IMITATE](https://github.com/KatDost/Imitate), [MIMIC](https://github.com/KatDost/Mimic) and [CANCELS](https://github.com/KatDost/Cancels) containing all experiments and results presented in the papers. 
