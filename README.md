@@ -15,7 +15,7 @@ Please note that imitatebias is available as a PyPI package. To install it, use
 ```
 pip install imitatebias
 ```
-and follow the examples in our documentation.
+and follow the examples in our [documentation](https://katdost.github.io/imitatebias/).
 
 # Citation
 If you want to use this implementation or cite IMITATE in your publication, please cite the following ICDM paper:
