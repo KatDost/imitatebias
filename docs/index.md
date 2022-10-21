@@ -19,10 +19,10 @@ and follow the examples in our documentation.
 
 ## API Documentation and Examples
 
-* [IMITATE](/imitate/) to fit one multivariate Gaussian to a real-valued tabular dataset.
-* [MIMIC](/mimic/) to fit a multivariate Gaussian mixture model to a real-valued tabular dataset where multiple clusters are to be expected.
-* [CANCELS](/cancels/) is specifically designed for chemical compound datasets.
-* [Data and Bias Generators](/generators/) lets you generate biased datasets to try out the methods.
+* [IMITATE](/imitatebias/imitate/) to fit one multivariate Gaussian to a real-valued tabular dataset.
+* [MIMIC](/imitatebias/mimic/) to fit a multivariate Gaussian mixture model to a real-valued tabular dataset where multiple clusters are to be expected.
+* [CANCELS](/imitatebias/cancels/) is specifically designed for chemical compound datasets.
+* [Data and Bias Generators](/imitatebias/generators/) let you generate biased datasets to try out the methods.
 
 ## Citation
 
